@@ -31,3 +31,8 @@ One area I continuously work on is my tendency to get deeply absorbed in details
 
 **Answer:**  
 I am looking for new opportunities to further develop my skills and contribute to a dynamic team environment. While my current role has provided valuable experiences, I am seeking a position that offers more growth opportunities and challenges where I can continue to expand my expertise in these areas. I am excited about the possibility of bringing my skills and experience to your team and contributing to its success.
+
+## Question 8: How do you manage conflicts?
+
+**Answer:**  
+I handle conflicts diplomatically by listening actively to all parties to understand their perspectives. I focus on finding common ground through collaborative solutions, maintaining professionalism, empathy, and clear communication. This approach fosters positive relationships and teamwork, ensuring resolutions that align with team goals and prevent escalation.
