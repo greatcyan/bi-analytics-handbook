@@ -26,3 +26,8 @@ I have substantial experience in circuit analysis, where I've tackled intricate 
 
 **Answer:**  
 One area I continuously work on is my tendency to get deeply absorbed in details. For instance, when working on projects, I ensure meticulous attention to detail, such as checking for missing values in datasets and ensuring all visuals are perfectly aligned. While this commitment to precision ensures high-quality outputs, I am aware that it can sometimes lead to spending more time than necessary on tasks. I actively strive to balance my focus on details with maintaining efficient project timelines and priorities.
+
+## Question: Why are you leaving your current position?
+
+**Answer:**  
+I am looking for new opportunities to further develop my skills and contribute to a dynamic team environment. While my current role has provided valuable experiences, I am seeking a position that offers more growth opportunities and challenges where I can continue to expand my expertise in these areas. I am excited about the possibility of bringing my skills and experience to your team and contributing to its success.
