@@ -21,3 +21,8 @@ My greatest strength lies in my analytical skills. Whether it's conducting circu
 
 **Answer:**  
 I have substantial experience in circuit analysis, where I've tackled intricate electrical designs and troubleshooting scenarios. In data analysis, I've utilized tools like Excel, Python, and Power BI to uncover patterns and trends that inform critical business decisions. Additionally, my background in failure analysis has equipped me with a methodical approach to identifying root causes and implementing preventive measures.
+
+## Question: What is your greatest weakness?
+
+**Answer:**  
+One area I continuously work on is my tendency to get deeply absorbed in details. For instance, when working on projects, I ensure meticulous attention to detail, such as checking for missing values in datasets and ensuring all visuals are perfectly aligned. While this commitment to precision ensures high-quality outputs, I am aware that it can sometimes lead to spending more time than necessary on tasks. I actively strive to balance my focus on details with maintaining efficient project timelines and priorities.
