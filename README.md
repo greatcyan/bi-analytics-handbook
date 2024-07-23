@@ -12,3 +12,12 @@ Through my career, I've honed my skills in data analysis and automation, which a
 **Answer:**  
 Outside of work, I enjoy working on electronic projects to keep my analytical skills sharp. I also have a keen interest in UI/UX design and regularly watch videos to enhance my dashboard design strategies. This hobby not only reinforces my technical skills but also fuels my creativity in presenting data intuitively.
 
+## Question: What is your greatest strength?
+
+**Answer:**  
+My greatest strength lies in my analytical skills. Whether it's conducting circuit analysis, performing data analysis, or investigating failure scenarios, I excel in systematically breaking down complex problems to extract meaningful insights and solutions. This skill has not only enabled me to diagnose and resolve technical issues effectively but also to contribute valuable perspectives to strategic decision-making processes.
+
+## Question: Can you elaborate on your experience?
+
+**Answer:**  
+I have substantial experience in circuit analysis, where I've tackled intricate electrical designs and troubleshooting scenarios. In data analysis, I've utilized tools like Excel, Python, and Power BI to uncover patterns and trends that inform critical business decisions. Additionally, my background in failure analysis has equipped me with a methodical approach to identifying root causes and implementing preventive measures.
