@@ -14,3 +14,6 @@ In my current role, I have effectively communicated with multiple stakeholders, 
 
 ### Expertise in Snowflake and Microsoft's Azure platform:
 While I haven’t worked with Snowflake, I am familiar with Microsoft Azure, particularly with Azure Active Directory. My experience with Azure Active Directory has provided me with an understanding of Azure’s broader ecosystem. Although I haven’t yet had the opportunity to work with other Azure services or Snowflake, I am highly motivated to expand my knowledge in these areas. I am actively seeking resources and training to become proficient with Snowflake and other Azure services, and I am confident in my ability to quickly learn and adapt to new technologies.
+
+### Experience with Azure DevOps processes, including branching and deployment pipelines:
+While I don’t have direct experience with Azure DevOps, I have worked with deployment pipelines in Power BI Service, which has given me a good understanding of deployment workflows and version control principles. Although my exploration was limited due to the expiration of the Microsoft Fabric Trial, I am keen to develop my skills in Azure DevOps. I am actively seeking to familiarize myself with Azure DevOps processes, including branching and deployment pipelines, and I am confident in my ability to rapidly acquire the necessary skills.
