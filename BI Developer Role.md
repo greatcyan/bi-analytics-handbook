@@ -25,3 +25,6 @@ While I haven’t had direct experience with Azure DevOps or Snowflake, I’m fa
 
 ### Salary expectations
 I’m currently earning P0000 pesos. Given the responsibilities of the role and my experience, I believe a salary in the range of 65,000 to 70,000 pesos would be appropriate. However, I am open to discussing this further based on the overall compensation package and the value I can bring to your team.
+
+### About the Company
+The company is the world's largest supplier of semiconductor test equipment for logic, RF, analog, power, mixed-signal and memory technologies and deliver test solutions to developers and manufacturers of a broad range of integrated circuits, packaged separately or integrated as cells in system-on-a-chip (SOC) devices.
