@@ -17,3 +17,8 @@ While I haven’t worked with Snowflake, I am familiar with Microsoft Azure, par
 
 ### Experience with Azure DevOps processes, including branching and deployment pipelines:
 While I don’t have direct experience with Azure DevOps, I have worked with deployment pipelines in Power BI Service, which has given me a good understanding of deployment workflows and version control principles. Although my exploration was limited due to the expiration of the Microsoft Fabric Trial, I am keen to develop my skills in Azure DevOps. I am actively seeking to familiarize myself with Azure DevOps processes, including branching and deployment pipelines, and I am confident in my ability to rapidly acquire the necessary skills.
+
+### Tell me about yourself
+Sure! I’m Cyrus Baruc, currently working as a DX Business Analyst-Finance/Power BI Developer. In my role, I focus on BI development, including managing ETL processes, data modeling, and creating visualizations with Power BI. I have over a year and a half of experience in this position, and I’ve also worked with SQL using tools like Microsoft SQL Server and Google BigQuery.
+
+While I haven’t had direct experience with Azure DevOps or Snowflake, I’m familiar with deployment pipelines in Power BI Service and am actively learning more about these areas. I’m enthusiastic about expanding my skills and contributing to your team. My background in data analysis and visualization, combined with my proactive approach to learning new technologies, makes me excited about the opportunity to bring my expertise to this role.
