@@ -22,3 +22,6 @@ While I don’t have direct experience with Azure DevOps, I have worked with dep
 Sure! I’m Cyrus Baruc, currently working as a DX Business Analyst-Finance/Power BI Developer. In my role, I focus on BI development, including managing ETL processes, data modeling, and creating visualizations with Power BI. I have over a year and a half of experience in this position, and I’ve also worked with SQL using tools like Microsoft SQL Server and Google BigQuery.
 
 While I haven’t had direct experience with Azure DevOps or Snowflake, I’m familiar with deployment pipelines in Power BI Service and am actively learning more about these areas. I’m enthusiastic about expanding my skills and contributing to your team. My background in data analysis and visualization, combined with my proactive approach to learning new technologies, makes me excited about the opportunity to bring my expertise to this role.
+
+### Salary expectations
+I’m currently earning P0000 pesos. Given the responsibilities of the role and my experience, I believe a salary in the range of 65,000 to 70,000 pesos would be appropriate. However, I am open to discussing this further based on the overall compensation package and the value I can bring to your team.
