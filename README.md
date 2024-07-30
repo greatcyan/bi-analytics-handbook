@@ -7,9 +7,17 @@ Hi, my name is Cyrus. I’m currently a DX Business Analyst-Finance/Power BI Dev
 
 I have strong knowledge of SQL, having used it for querying and data manipulation with Microsoft SQL Server and Google BigQuery. I’m also familiar with data warehousing concepts and technologies, which I apply regularly in my current role.
 
-In addition to my BI experience, I’ve worked as a Python Developer focusing on data analysis and visualization with tools like pandas and matplotlib. Although I don’t have experience with R, I am eager to learn and expand my skill set.
+In addition to my BI experience, I’ve worked as a Python Developer focusing on data analysis and visualization with tools like pandas and matplotlib. I also have experience with R from my Google Data Analytics Professional Certificate training on Coursera.
 
-While I don’t have formal certification yet, I have practical experience with various data analytics tools and am actively pursuing relevant certifications to further solidify my expertise.
+Regarding certifications, I am currently enrolled in the Data Science Certification Program at UP Cebu. I have completed several certifications, including:
+
+- Power BI Data Analyst @ Microsoft on Coursera
+- Business Intelligence Certificate @ Google on Coursera
+- Data Analytics Certificate @ Google on Coursera
+- Data Governance Specialization @ Project SPARTA PH
+- Computing Specialization @ Project SPARTA PH
+- Data Visualization Specialization @ Project SPARTA PH
+- Data Associate Pathway @ Project SPARTA PH
 
 I’m excited about this opportunity because I’m passionate about leveraging data to drive business decisions. I look forward to discussing how I can contribute to [Company Name].
 
