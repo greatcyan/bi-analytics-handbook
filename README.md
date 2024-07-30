@@ -2,6 +2,18 @@
 
 ## Question 1: Tell me about yourself.
 **Answer:**  
+
+Hi, my name is Cyrus. I’m currently a DX Business Analyst-Finance/Power BI Developer at Lexmark, with over a year and a half of experience in business intelligence. In this role, I manage ETL processes, perform data modeling, and create visualizations using Power BI.
+
+I have strong knowledge of SQL, having used it for querying and data manipulation with Microsoft SQL Server and Google BigQuery. I’m also familiar with data warehousing concepts and technologies, which I apply regularly in my current role.
+
+In addition to my BI experience, I’ve worked as a Python Developer focusing on data analysis and visualization with tools like pandas and matplotlib. Although I don’t have experience with R, I am eager to learn and expand my skill set.
+
+While I don’t have formal certification yet, I have practical experience with various data analytics tools and am actively pursuing relevant certifications to further solidify my expertise.
+
+I’m excited about this opportunity because I’m passionate about leveraging data to drive business decisions. I look forward to discussing how I can contribute to [Company Name].
+
+**Answer:** 
 Hi, I'm Cyrus Baruc. I am passionate about working with data to uncover valuable insights that drive better decision-making. I have developed proficiency in Excel, Power BI, Python, and automation tools like Power Apps and Power Automate. These skills have enabled me to automate data processes and create insightful reports and dashboards for stakeholders.
 
 ## Question 2: How has your experience prepared you for this role?
