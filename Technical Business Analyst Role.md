@@ -8,9 +8,9 @@ Additionally, I have experience as a Python Developer, which provided me with a 
 
 My proficiency in Power BI, Tableau, programming languages including Python, R, SQL, and automation tools such as Power Automate and Power Apps has further enhanced my skills relevant to data analytics.
 
-My previous role as a test technician and board repair specialist gave me a background in statistical methods, particularly process capability (CpK). This method ensured that the circuit boards and electronic components we refurbished were reliable and not prone to warranty issues. Additionally, I am currently undergoing training for a data science certification program, which has familiarized me with statistical methods and the data transformation and preparation processes used for machine learning.
+My previous role as a test technician and board repair specialist gave me a background in statistical analysis, particularly process capability index (CpK). This analysis ensured that the circuit boards and electronic components we refurbished were reliable and not prone to warranty issues. Additionally, I am currently undergoing training for a data science certification program, which has familiarized me with other statistical methods and the data transformation and preparation processes used for machine learning.
 
-Although I do not have direct experience working with Snowflake as mentioned in the key requirements, I do have experience with related areas such as SAP Business Objects, SAP Business Warehouse, Google BigQuery, and Microsoft SQL Server, which I accumulated through previous training, certifications, and my current role.
+Although I do not have direct experience working with Snowflake as mentioned in the key requirements, I do have experience with related areas such as SAP Business Objects, SAP Business Warehouse, Google BigQuery, and Microsoft SQL Server, which I accumulated through previous training and certifications, self learning and in my current role.
 
 Throughout my career, I have demonstrated strong analytical and problem-solving abilities, which are essential as mentioned in the key requirements. Regarding my communication skills, although English is not my primary language, I always strive to ensure my message is understood by my stakeholders and continuously seek opportunities to improve.
 
