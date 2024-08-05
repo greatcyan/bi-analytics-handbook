@@ -1,4 +1,4 @@
-Hellow Matt Millest, good afternoon. My name is Cyrus. I graduated with a Bachelor of Science in Industrial Technology, majoring in Electronics, and I have a strong understanding of IoT devices.
+Hello Mr. Matt Millest, good afternoon. My name is Cyrus. I graduated with a Bachelor of Science in Industrial Technology, majoring in Electronics, and I have a strong understanding of IoT devices.
 
 I am a career shifter. I spent a decade in semiconductor test engineering and board repair before transitioning to data analytics, where I have been for over a year and a half. In this role, I have been extensively involved in empowering businesses to make informed decisions through data-driven insights.
 
