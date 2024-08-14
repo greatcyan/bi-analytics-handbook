@@ -1,58 +1,20 @@
-# Interview Questions and Answers
+# About Me
 
-## Question 1: Tell me about yourself.
-**Answer:**  
+### Greetings
+• Good morning. Thank you for this opportunity to be interviewed.
 
-Hi, my name is Cyrus. I’m currently a DX Business Analyst-Finance/Power BI Developer at Lexmark, with over a year and a half of experience in business intelligence. In this role, I manage ETL processes, perform data modeling, and create visualizations using Power BI.
+### Introduce your background
+• My name is Cyrus, and I have over a decade of experience in the technology industry. In my career journey, I have worked as an: • Electronics Technologist, • Power BI Developer, and • Python Developer.
 
-I have strong knowledge of SQL, having used it for querying and data manipulation with Microsoft SQL Server and Google BigQuery. I’m also familiar with data warehousing concepts and technologies, which I apply regularly in my current role.
+### Describe your role for each and the skills you acquired relevant to the new role
 
-In addition to my BI experience, I’ve worked as a Python Developer focusing on data analysis and visualization with tools like pandas and matplotlib. I also have experience with R from my Google Data Analytics Professional Certificate training on Coursera.
+• During my career as an Electronics Technologist, I repaired, diagnosed and maintained automated test equipment (ATE) which includes circuit boards, power supplies, and electromechanical assemblies. These systems are used by semiconductor manufacturers and chipmakers to test electronic and electrical devices.  This experience provided me a strong foundation in troubleshooting, problem-solving, and the ability to learn and understand sophisticated and complex systems. Additionally, during this time my interest in data analysis begun and was fascinated by its importance in identifying root causes to solve circuit failures and problems.
 
-Regarding certifications, I am currently enrolled in the Data Science Certification Program at UP Cebu. I have completed several certifications, including:
+• So, my experience a s a Python Developer was originally inspired by that motivation and interest in data. That’s why my focused was on developing scripts and functions related to data analysis and data visualization. This gave me a strong background in Python libraries relevant to data, including Pandas and NumPy, as well as packages for GUI development.
 
-- Power BI Data Analyst @ Microsoft on Coursera
-- Business Intelligence Certificate @ Google on Coursera
-- Data Analytics Certificate @ Google on Coursera
-- Data Governance Specialization @ Project SPARTA PH
-- Computing Specialization @ Project SPARTA PH
-- Data Visualization Specialization @ Project SPARTA PH
-- Data Associate Pathway @ Project SPARTA PH
+• Currently, I worked as a Power BI Developer and a Business Analyst, where I have been extensively involved in dashboard development, report optimization and maintenance, supporting finance analytics projects. In this role, I have handled ETL, Data Integration and Modeling, as well as designing interactive and intuitive dashboards by applying data visualization best practices enhancing the UX. In this role, it provides me new additional skillsets and proficiency in tools and technologies for process automation and data analytics, which is the Power Platform such as Power BI, Power Apps, and Power Automate.
 
-I’m excited about this opportunity because I’m passionate about leveraging data to drive business decisions. I look forward to discussing how I can contribute to [Company Name].
+• I am passionate about continuous learning. Because I believe that by consistently expanding the knowledge and the skills that I can bring to the table will benefit my team, which is eventually benefit my family. 
 
-**Answer:** 
-Hi, I'm Cyrus Baruc. I am passionate about working with data to uncover valuable insights that drive better decision-making. I have developed proficiency in Excel, Power BI, Python, and automation tools like Power Apps and Power Automate. These skills have enabled me to automate data processes and create insightful reports and dashboards for stakeholders.
+That’s about me, and I hope my background aligns with what you are looking for.
 
-## Question 2: How has your experience prepared you for this role?
-**Answer:**  
-Through my career, I've honed my skills in data analysis and automation, which are directly applicable to this role. My proficiency in Excel, Power BI, Python, and Power Apps/Power Automate has allowed me to effectively automate data preparation and create actionable insights. I am confident that my background will contribute to the team's success by leveraging data to drive strategic decisions.
-
-## Question 3: What do you enjoy doing outside of work?
-**Answer:**  
-Outside of work, I enjoy working on electronic projects to keep my analytical skills sharp. I also have a keen interest in UI/UX design and regularly watch videos to enhance my dashboard design strategies. This hobby not only reinforces my technical skills but also fuels my creativity in presenting data intuitively.
-
-## Question 4: What is your greatest strength?
-
-**Answer:**  
-My greatest strength lies in my analytical skills. Whether it's conducting circuit analysis, performing data analysis, or investigating failure scenarios, I excel in systematically breaking down complex problems to extract meaningful insights and solutions. This skill has not only enabled me to diagnose and resolve technical issues effectively but also to contribute valuable perspectives to strategic decision-making processes.
-
-## Question 5: Can you elaborate on your experience?
-
-**Answer:**  
-I have substantial experience in circuit analysis, where I've tackled intricate electrical designs and troubleshooting scenarios. In data analysis, I've utilized tools like Excel, Python, and Power BI to uncover patterns and trends that inform critical business decisions. Additionally, my background in failure analysis has equipped me with a methodical approach to identifying root causes and implementing preventive measures.
-
-## Question 6: What is your greatest weakness?
-
-**Answer:**  
-One area I continuously work on is my tendency to get deeply absorbed in details. For instance, when working on projects, I ensure meticulous attention to detail, such as checking for missing values in datasets and ensuring all visuals are perfectly aligned. While this commitment to precision ensures high-quality outputs, I am aware that it can sometimes lead to spending more time than necessary on tasks. I actively strive to balance my focus on details with maintaining efficient project timelines and priorities.
-
-## Question 7: Why are you leaving your current position?
-
-**Answer:**  
-I am looking for new opportunities to further develop my skills and contribute to a dynamic team environment. While my current role has provided valuable experiences, I am seeking a position that offers more growth opportunities and challenges where I can continue to expand my expertise in these areas. I am excited about the possibility of bringing my skills and experience to your team and contributing to its success.
-
-## Question 8: How do you manage conflicts?
-
-**Answer:**  
-I handle conflicts diplomatically by listening actively to all parties to understand their perspectives. I focus on finding common ground through collaborative solutions, maintaining professionalism, empathy, and clear communication. This approach fosters positive relationships and teamwork, ensuring resolutions that align with team goals and prevent escalation.
