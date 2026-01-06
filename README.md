@@ -1,20 +1,37 @@
-# About Me
+# BI & Analytics Handbook
 
-### Greetings
-• Good morning. Thank you for this opportunity to be interviewed.
+Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns, industry trends (like the Cognizant/3Cloud merger), and technical best practices.
 
-### Introduce your background
-• My name is Cyrus, and I have over a decade of experience in the technology industry. In my career journey, I have worked as an: • Electronics Technologist, • Power BI Developer, and • Python Developer.
+## 🧠 Core Data Modeling Principles
 
-### Describe your role for each and the skills you acquired relevant to the new role
+One of the foundational pillars of this repository is mastering the **Star Schema**. Below is a quick reference guide based on standard BI interview and architectural patterns.
 
-• During my career as an Electronics Technologist, I repaired, diagnosed and maintained automated test equipment (ATE) which includes circuit boards, power supplies, and electromechanical assemblies. These systems are used by semiconductor manufacturers and chipmakers to test electronic and electrical devices.  This experience provided me a strong foundation in troubleshooting, problem-solving, and the ability to learn and understand sophisticated and complex systems. Additionally, during this time my interest in data analysis begun and was fascinated by its importance in identifying root causes to solve circuit failures and problems.
+| Topic | Answer |
+| :--- | :--- |
+| **How do you design a star schema?** | A star schema consists of a central **fact table** with measurable data and foreign keys, surrounded by **dimension tables** that store descriptive attributes. This structure improves query performance, simplifies DAX, and makes the model easier for users to understand. |
+| **Why prefer star schema over snowflake?** | I generally prefer a star schema because it is simpler, more intuitive, and performs better in Power BI. |
 
-• So, my experience a s a Python Developer was originally inspired by that motivation and interest in data. That’s why my focused was on developing scripts and functions related to data analysis and data visualization. This gave me a strong background in Python libraries relevant to data, including Pandas and NumPy, as well as packages for GUI development.
+---
 
-• Currently, I worked as a Power BI Developer and a Business Analyst, where I have been extensively involved in dashboard development, report optimization and maintenance, supporting finance analytics projects. In this role, I have handled ETL, Data Integration and Modeling, as well as designing interactive and intuitive dashboards by applying data visualization best practices enhancing the UX. In this role, it provides me new additional skillsets and proficiency in tools and technologies for process automation and data analytics, which is the Power Platform such as Power BI, Power Apps, and Power Automate.
+## 📈 Industry & Market Intelligence
 
-• I am passionate about continuous learning. Because I believe that by consistently expanding the knowledge and the skills that I can bring to the table will benefit my team, which is eventually benefit my family. 
+This section tracks the evolving landscape of the Modern Data Stack (MDS) and major corporate shifts.
 
-That’s about me, and I hope my background aligns with what you are looking for.
+### Recent Insight: Cognizant Acquisition of 3Cloud
+* **Event:** On January 1, 2026, Cognizant completed the acquisition of 3Cloud.
+* **Significance:** This merger combines Cognizant's massive scale (~350k employees) with 3Cloud’s niche expertise in Azure and Databricks.
+* **Impact for BI:** It signals a massive shift toward **Enterprise AI**. For BI professionals, this highlights the growing need to integrate traditional analytics with Azure-native AI "Builder" capabilities.
 
+---
+
+## 🛠 Repository Structure
+
+* `/Modeling`: Deep dives into Star Schema vs. Snowflake, Data Vault, and normalization.
+* `/SQL-Snippets`: Optimized queries for common BI reporting needs.
+* `/Power-BI-DAX`: Patterns for time intelligence and complex measures.
+* `/Market-Analysis`: Notes on industry leaders like Cognizant, Teradyne, and Microsoft.
+
+---
+
+## 🚀 About the Author
+I am a Data Enthusiast focused on bridging the gap between raw data and executive insights. I use this repository to document my learning journey and professional growth in the cloud-scale analytics space.
