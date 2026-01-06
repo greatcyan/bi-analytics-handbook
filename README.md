@@ -62,10 +62,6 @@ Focused on building efficient, scalable, and enterprise-ready models.
 
 ## 🧱 Databricks & Data Pipelines
 
-Demonstrates experience working beyond Power BI and collaborating with data engineering teams.
-
-## 🧱 Databricks & Data Pipelines
-
 | Topic | Answer |
 | :--- | :--- |
 | **Role of Databricks** | Serves as the scalable **Lakehouse** layer where raw data is processed using Spark and Delta Lake before BI consumption. |
