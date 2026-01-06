@@ -1,6 +1,6 @@
 # BI & Analytics Handbook
 
-Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns, industry trends (like the Cognizant/3Cloud merger), and technical best practices.
+Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns and technical best practices.
 
 ## 🧠 Core Data Modeling Principles
 
@@ -13,14 +13,6 @@ One of the foundational pillars of this repository is mastering the **Star Schem
 
 ---
 
-## 📈 Industry & Market Intelligence
-
-This section tracks the evolving landscape of the Modern Data Stack (MDS) and major corporate shifts.
-
-### Recent Insight: Cognizant Acquisition of 3Cloud
-* **Event:** On January 1, 2026, Cognizant completed the acquisition of 3Cloud.
-* **Significance:** This merger combines Cognizant's massive scale (~350k employees) with 3Cloud’s niche expertise in Azure and Databricks.
-* **Impact for BI:** It signals a massive shift toward **Enterprise AI**. For BI professionals, this highlights the growing need to integrate traditional analytics with Azure-native AI "Builder" capabilities.
 
 ---
 
