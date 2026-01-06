@@ -9,7 +9,7 @@ One of the foundational pillars of this repository is mastering the **Star Schem
 | Topic | Answer |
 | :--- | :--- |
 | **How do you design a star schema?** | A star schema consists of a central **fact table** with measurable data and foreign keys, surrounded by **dimension tables** that store descriptive attributes. This structure improves query performance, simplifies DAX, and makes the model easier for users to understand. |
-| **Why prefer star schema over snowflake?** | I generally prefer a star schema because it is simpler, more intuitive, and performs better in Power BI. |
+| **Why prefer star schema over snowflake?** | I generally prefer a star schema because it is simpler, more intuitive, and performs better in Power BI. Star schemas reduce the number of joins required during query execution, which improves performance and makes the model easier to understand for both developers and business users.From a DAX perspective, star schemas also reduce ambiguity in relationships, making calculations more predictable and easier to maintain. Snowflake schemas may be more normalized, but the added complexity often hurts usability and performance in reporting scenarios. |
 
 ---
 
