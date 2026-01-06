@@ -64,13 +64,14 @@ Focused on building efficient, scalable, and enterprise-ready models.
 
 Demonstrates experience working beyond Power BI and collaborating with data engineering teams.
 
+## 🧱 Databricks & Data Pipelines
+
 | Topic | Answer |
 | :--- | :--- |
-| **Role of Databricks in BI architecture** | Databricks serves as a scalable data engineering and transformation layer where raw data is processed and optimized before being consumed by Power BI. |
-| **ETL vs ELT pipelines** | I typically follow an ELT approach, loading raw data first and performing transformations within Databricks using Spark, which improves scalability and flexibility. |
-| **Delta Tables** | Delta tables provide ACID transactions, schema enforcement, versioning, and performance optimizations such as data skipping, making them ideal for analytical workloads. |
-| **Optimization techniques** | Common techniques include partitioning, Z-ordering, caching, and managing file sizes to improve query performance and downstream BI consumption. |
-| **Databricks integration with Power BI** | Power BI connects to Databricks using Import or DirectQuery, depending on latency and performance requirements. Databricks typically provides curated, analytics-ready datasets. |
+| **Role of Databricks** | Serves as the scalable **Lakehouse** layer where raw data is processed using Spark and Delta Lake before BI consumption. |
+| **Databricks vs. Fabric** | Databricks is most similar to the **Fabric Lakehouse**. Both utilize **Delta Lake** and the **Medallion Architecture**. While Fabric Warehouse focuses on T-SQL, Databricks (and Fabric Lakehouse) focuses on Spark-based engineering and open-format storage. |
+| **Unity Catalog vs. OneLake** | Databricks governs data through **Unity Catalog**, providing cross-cloud governance. Fabric centralizes data in **OneLake**, acting as a unified "SaaS" storage layer for the entire organization. |
+| **Delta Tables** | Delta tables provide ACID transactions, schema enforcement, and versioning, making them the "gold standard" for both Databricks and Fabric environments. |
 
 ---
 
