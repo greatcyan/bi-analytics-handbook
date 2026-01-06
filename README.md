@@ -10,6 +10,7 @@ One of the foundational pillars of this repository is mastering the **Star Schem
 | :--- | :--- |
 | **How do you design a star schema?** | A star schema consists of a central **fact table** with measurable data and foreign keys, surrounded by **dimension tables** that store descriptive attributes. This structure improves query performance, simplifies DAX, and makes the model easier for users to understand. |
 | **Why prefer star schema over snowflake?** | I generally prefer a star schema because it is simpler, more intuitive, and performs better in Power BI. Star schemas reduce the number of joins required during query execution, which improves performance and makes the model easier to understand for both developers and business users.From a DAX perspective, star schemas also reduce ambiguity in relationships, making calculations more predictable and easier to maintain. Snowflake schemas may be more normalized, but the added complexity often hurts usability and performance in reporting scenarios. |
+| **How does star schema help DAX performance?** | Star schema helps DAX performance by simplifying filter propagation and reducing relationship complexity. In a star schema, filters flow cleanly from dimension tables to the fact table through one-to-many relationships. This allows the VertiPaq engine to efficiently resolve filter context and aggregate measures. Because there are fewer joins and no chained dimension relationships, DAX calculations execute faster, are easier to debug, and avoid unexpected results caused by ambiguous paths. | 
 
 ---
 
