@@ -1,4 +1,4 @@
-# BI & Analytics Handbook
+# ☑️📌BI & Analytics Handbook
 
 Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns, advanced DAX, and end-to-end data pipeline best practices.
 
@@ -124,7 +124,7 @@ Focused on advisory decision-making and cost optimization.
 * **Performance:** Always mention that a report is only good if it's fast and accurate.
 
 ---
-# Senior BI Consultant Study Guide: DAX & Soft Skills
+# ☑️📌Senior BI Consultant Study Guide: DAX & Soft Skills
 
 This guide is tailored for Senior Consultant roles at elite Microsoft partners. It focuses on architectural impact rather than just basic syntax.
 
