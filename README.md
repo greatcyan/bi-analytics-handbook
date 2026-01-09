@@ -216,7 +216,7 @@ The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to 
 
 ---
 
-## 4. 3Cloud Cultural Fit (The "Core Values" Interview)
+## 4. Cultural Fit (The "Core Values" Interview)
 
 3Cloud explicitly hires for **Accountability** and **Candid Feedback**.
 
