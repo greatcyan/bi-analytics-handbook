@@ -96,6 +96,33 @@ Focused on advisory decision-making and cost optimization.
 | **How would you advise a client with 300 users?** | I assess usage patterns, data volume, refresh frequency, and sharing needs. In many cases, Premium Capacity is cost-effective for large audiences, while Premium Per User may suffice if advanced features are limited to a smaller group. |
 
 ---
+## Technical & Architectural Interview Guide
+
+| Question Category | Scenario / Context | Expert Consultant Answer |
+| :--- | :--- | :--- |
+| **Data Architecture** | **Direct Lake vs. DirectQuery** | Use **Direct Lake** (Fabric) for high-volume data to get Import-mode speed without the data copy. Use **DirectQuery** only if you need real-time T-SQL logic or the data exceeds Fabric's capacity. |
+| **Data Modeling** | **Star Schema vs. Flat Tables** | Always advocate for **Star Schema**. It optimizes the VertiPaq engine, prevents double-counting on different granularities (e.g., Budget vs. Actuals), and simplifies DAX logic. |
+| **DAX Optimization** | **Performance Troubleshooting** | Use **Performance Analyzer** to find the bottleneck. If DAX is slow, use **DAX Studio** to check for "CallbackDataID" or expensive iterators. Check for high-cardinality columns bloating the model. |
+| **Security** | **Dynamic Row-Level Security (RLS)** | Use `USERPRINCIPALNAME()` mapped to a security bridge table. This allows one single role to filter data based on the logged-in user's credentials and organizational hierarchy. |
+| **Advanced DAX** | **Calculated Columns vs. Measures** | Measures are calculated on the fly and respond to filters (CPU intensive); Columns are calculated during refresh (Memory intensive). As a rule: **"Do it in the source, then Power Query, then DAX measures."** |
+| **ETL / Integration** | **Query Folding** | Ensure transformations happen at the SQL source level. If a step in Power Query turns "off" folding, the engine downloads all data to the local machine, causing significant refresh delays. |
+| **Platform Knowledge** | **Microsoft Fabric Integration** | Fabric is the unified SaaS layer. Discuss **OneLake** (the "OneDrive for data") and how **Power BI** now interacts directly with Lakehouses and Warehouses without needing separate silos. |
+| **Data Integrity** | **SCD Type 2 (Historical Data)** | Use surrogate keys in the fact table to link to specific versions of a dimension record. This ensures that historical sales remain tied to the territory/manager active at the *time of the sale*. |
+| **Governance** | **Deployment Pipelines** | Use **Power BI Deployment Pipelines** (Dev -> Test -> Prod). This ensures consistency, allows for parameterizing connection strings, and prevents accidental deletions in production. |
+| **Consulting Skills** | **Ambiguous Requirements** | Start with **KPI Discovery**. Ask: "What decision will this report help you make?" and "What does success look like in 6 months?" Build a Wireframe (low-fidelity) before touching the data. |
+
+## Key DAX Functions to Review
+* **`CALCULATE()`**: The most important function; modifies filter context.
+* **`REMOVEFILTERS()` / `ALL()`**: Essential for calculating percentages of totals.
+* **`USERPRINCIPALNAME()`**: Core for dynamic security.
+* **`SUMMARIZECOLUMNS()`**: The gold standard for querying data in modern Power BI.
+* **`TREATAS()`**: Useful for virtual relationships when a physical one isn't possible.
+
+## Interview Strategy: The "3Cloud" Way
+* **Azure-Only Focus:** Emphasize that you are a specialist in the Microsoft ecosystem.
+* **People First:** Mention how your solutions enable "Data Democracy" (making data easy for non-technical users).
+* **Performance:** Always mention that a report is only good if it's fast and accurate.
+---
 
 ## 🛠 Repository Structure
 
