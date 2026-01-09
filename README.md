@@ -173,8 +173,10 @@ As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituat
 * **Medallion Architecture:** Be able to explain **Bronze** (Raw), **Silver** (Cleansed), and **Gold** (Aggregated/Business-Ready) layers within a Lakehouse.
 * **Vibe Coding / AI:** Mention how you use **Copilot for DAX** to speed up development, but emphasize that you manually audit the code for performance.
 * **Governance:** Mention **Purview** for data lineage and **Deployment Pipelines** for moving code from Dev to Prod.
+
 ---
-# 3Cloud (Cognizant) Senior Consultant: Power BI & Data Specialist Study Guide
+
+# ☑️📌Senior Consultant: Power BI & Data Specialist Study Guide
 
 ## 1. Technical Deep-Dive: Power BI & Databricks Integration
 
@@ -211,14 +213,14 @@ Expects you to act as a **trusted advisor** regarding Microsoft's complex licens
 The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to migrate these to the cloud.
 
 * **SSRS -> Power BI:** Explain that **Paginated Reports** in Power BI are the direct successor to SSRS. You can host `.rdl` files directly in the Power BI Service.
-* **SSIS -> Databricks/Data Factory:** Explain that legacy SSIS packages can be "lifted and shifted" into **Azure Data Factory (ADF)**, but the modern 3Cloud approach is to refactor them into **Databricks Notebooks** or **Medallion pipelines** for better scalability.
+* **SSIS -> Databricks/Data Factory:** Explain that legacy SSIS packages can be "lifted and shifted" into **Azure Data Factory (ADF)**, but the modern approach is to refactor them into **Databricks Notebooks** or **Medallion pipelines** for better scalability.
 * **SQL DW -> Synapse/Fabric:** Emphasize moving from a fixed-resource SQL warehouse to a decoupled **Storage (OneLake) + Compute (Fabric SQL)** model.
 
 ---
 
 ## 4. Cultural Fit (The "Core Values" Interview)
 
-3Cloud explicitly hires for **Accountability** and **Candid Feedback**.
+Consulting firms explicitly hires for **Accountability** and **Candid Feedback**.
 
 * **"Roll up your sleeves":** Be ready with a story where you did "grunt work" (like cleaning a messy CSV) to help the team meet a deadline.
 * **"Experiment or Fail":** Talk about a time you tried a new tool (like a Python script for data cleaning) that didn't work, what you learned, and how you pivoted back to a stable solution.
