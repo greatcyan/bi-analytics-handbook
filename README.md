@@ -118,12 +118,62 @@ Focused on advisory decision-making and cost optimization.
 * **`SUMMARIZECOLUMNS()`**: The gold standard for querying data in modern Power BI.
 * **`TREATAS()`**: Useful for virtual relationships when a physical one isn't possible.
 
-## Interview Strategy: The "3Cloud" Way
+## Interview Strategy: 
 * **Azure-Only Focus:** Emphasize that you are a specialist in the Microsoft ecosystem.
 * **People First:** Mention how your solutions enable "Data Democracy" (making data easy for non-technical users).
 * **Performance:** Always mention that a report is only good if it's fast and accurate.
+
+---
+# Senior BI Consultant Study Guide: DAX & Soft Skills
+
+This guide is tailored for Senior Consultant roles at elite Microsoft partners. It focuses on architectural impact rather than just basic syntax.
+
+## 1. Consultant-Grade DAX Cheat Sheet
+
+| Function | Primary Purpose | Senior-Level "Pro-Tip" |
+| :--- | :--- | :--- |
+| `CALCULATE()` | The "Brain" of DAX. Modifies filter context. | Always use `KEEPFILTERS()` within CALCULATE if you want to preserve existing slicer selections rather than overwriting them. |
+| `SUMX() / AVERAGEX()` | Iterative functions that perform row-by-row logic. | Avoid using these on huge tables (10M+ rows) if a standard aggregation will suffice. Iterators are CPU-intensive. |
+| `ALL()` / `REMOVEFILTERS()` | Removes filters to calculate "Grand Totals." | Use `REMOVEFILTERS()` for clarity in modern DAX; it performs exactly like `ALL()` but is more descriptive for other devs. |
+| `ALLSELECTED()` | Keeps the filters coming from slicers/pages but ignores visual-level filters. | This is the "Gold Standard" for calculating "% of visible total" in dynamic dashboards. |
+| `USERPRINCIPALNAME()` | Returns the email of the logged-in user. | The foundation of **Dynamic RLS**. Combine with a bridge table to secure data for thousands of users with a single role. |
+| `TREATAS()` | Applies the result of a table expression as filters to columns from an unrelated table. | Use this for "Virtual Relationships" when you cannot (or should not) create a physical line in the model view. |
+| `SELECTEDVALUE()` | Captures what a user picked in a slicer. | Perfect for "Dynamic Titles" or switching metrics (e.g., swapping a chart between "Sales $" and "Units Sold"). |
+| `COALESCE()` | Returns the first non-blank value. | Use this to replace `IF(ISBLANK(...))` for cleaner code and slightly better performance. |
+| `SWITCH(TRUE()...)` | A cleaner alternative to nested IF statements. | Use the `TRUE()` pattern for complex conditional logic (e.g., `SWITCH(TRUE(), [Sales] > 1M, "Gold", [Sales] > 500k, "Silver", "Bronze")`). |
+
 ---
 
+## 2. Behavioral & Soft Skills for Consultants (The STAR Method)
+
+As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituation, **T**ask, **A**ction, **R**esult format.
+
+### Q1: "Tell me about a time you dealt with a difficult stakeholder."
+* **The Scenario:** A stakeholder demands a "Flat Table" export because they "don't trust the dashboard."
+* **The Answer:** Focus on **Active Listening** and **Education**.
+    * *Action:* I met with them 1-on-1 to find the root of their distrust. I discovered they were comparing a "Gross" number in Excel to a "Net" number in Power BI.
+    * *Result:* I aligned the definitions, added a "Data Dictionary" page to the report, and earned their buy-in, leading to a 40% increase in dashboard adoption.
+
+### Q2: "How do you handle ambiguous requirements?"
+* **The Scenario:** A client says, "I just need a dashboard for my sales team," but provides no KPIs.
+* **The Answer:** Focus on **Discovery Frameworks**.
+    * *Action:* I lead a "Design Thinking" session. I ask, "What is the first question you want to answer when you wake up?" and "What action will you take if this KPI turns red?" 
+    * *Result:* We moved from a generic request to a "Action-Oriented" dashboard that reduced meeting times by 15 minutes daily.
+
+### Q3: "Tell me about a time you failed or made a technical mistake."
+* **The Scenario:** You deployed a report that was extremely slow in production.
+* **The Answer:** Focus on **Accountability** and **Optimization**.
+    * *Action:* I took ownership, used **DAX Studio** to find a poorly written `FILTER(ALL())` measure, and refactored it using `KEEPFILTERS`.
+    * *Result:* The report load time dropped from 12 seconds to 2 seconds. I then created a "Performance Checklist" for the whole team to prevent it happening again.
+
+---
+
+## 3. High-Level Architectural Concepts (2026 Focus)
+
+* **Medallion Architecture:** Be able to explain **Bronze** (Raw), **Silver** (Cleansed), and **Gold** (Aggregated/Business-Ready) layers within a Lakehouse.
+* **Vibe Coding / AI:** Mention how you use **Copilot for DAX** to speed up development, but emphasize that you manually audit the code for performance.
+* **Governance:** Mention **Purview** for data lineage and **Deployment Pipelines** for moving code from Dev to Prod.
+---
 ## 🛠 Repository Structure
 
 * `/Modeling`: Deep dives into Star Schema vs. Snowflake, Data Vault, and normalization.
