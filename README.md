@@ -174,6 +174,64 @@ As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituat
 * **Vibe Coding / AI:** Mention how you use **Copilot for DAX** to speed up development, but emphasize that you manually audit the code for performance.
 * **Governance:** Mention **Purview** for data lineage and **Deployment Pipelines** for moving code from Dev to Prod.
 ---
+# 3Cloud (Cognizant) Senior Consultant: Power BI & Data Specialist Study Guide
+
+## 1. Technical Deep-Dive: Power BI & Databricks Integration
+
+Emphasizes the use of **Databricks** for data pipelines. You must be able to explain how the "Lakehouse" meets the "Dashboard."
+
+| Scenario | Expert Answer |
+| :--- | :--- |
+| **Connecting Power BI to Databricks** | Use the **Databricks Connector** in Power BI. For high performance, recommend **Partner Connect**. Mention the advantage of using **Unity Catalog** for centralized governance across both platforms. |
+| **Optimization: Delta Lake** | Explain **Z-Ordering** and **Data Skipping** in Databricks. As a BI consultant, explain that optimizing the Delta tables *before* Power BI connects is more effective than trying to fix performance in DAX. |
+| **DirectQuery vs. Import on Databricks** | For massive datasets, use **DirectQuery** with **Databricks SQL (DSQL)** to leverage the **Photon** engine. For smaller, high-speed interaction, use **Import Mode**. |
+| **Medallion Architecture** | Explain the flow: **Bronze** (Raw Landing) -> **Silver** (Cleansed/Joined) -> **Gold** (Aggregated for Power BI). Power BI should ideally only ever point to the **Gold** layer. |
+
+---
+
+## 2. The "Consultant" Edge: Licensing & Discovery
+
+Expects you to act as a **trusted advisor** regarding Microsoft's complex licensing.
+
+### Power BI Licensing Matrix (2026 Context)
+| License Type | Best For... | Key Constraint |
+| :--- | :--- | :--- |
+| **Power BI Pro** | Small to mid-size teams. | 1GB model limit; 8 refreshes/day. |
+| **Premium Per User (PPU)** | Small teams needing advanced AI/Paginated reports. | Content can ONLY be shared with other PPU users. |
+| **Fabric / Premium Capacity (F-SKUs)** | Large enterprises (500+ users). | No "per-reader" cost for F64+ SKUs. Includes OneLake. |
+
+**Discovery Question Scenario:**
+* **Question:** "A client has 800 employees who only need to *view* reports. Which license is best?"
+* **Answer:** "I would recommend **Microsoft Fabric (F64 SKU)** or higher. At 800 users, the 'Per User' cost of Pro ($10-$14/mo) exceeds the cost of a dedicated capacity. This also gives the organization access to OneLake and unified data engineering tools."
+
+---
+
+## 3. Legacy Transitions: SQL Server & SSIS to Azure
+
+The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to migrate these to the cloud.
+
+* **SSRS -> Power BI:** Explain that **Paginated Reports** in Power BI are the direct successor to SSRS. You can host `.rdl` files directly in the Power BI Service.
+* **SSIS -> Databricks/Data Factory:** Explain that legacy SSIS packages can be "lifted and shifted" into **Azure Data Factory (ADF)**, but the modern 3Cloud approach is to refactor them into **Databricks Notebooks** or **Medallion pipelines** for better scalability.
+* **SQL DW -> Synapse/Fabric:** Emphasize moving from a fixed-resource SQL warehouse to a decoupled **Storage (OneLake) + Compute (Fabric SQL)** model.
+
+---
+
+## 4. 3Cloud Cultural Fit (The "Core Values" Interview)
+
+3Cloud explicitly hires for **Accountability** and **Candid Feedback**.
+
+* **"Roll up your sleeves":** Be ready with a story where you did "grunt work" (like cleaning a messy CSV) to help the team meet a deadline.
+* **"Experiment or Fail":** Talk about a time you tried a new tool (like a Python script for data cleaning) that didn't work, what you learned, and how you pivoted back to a stable solution.
+* **"Candid Feedback":** "Tell me about a time you disagreed with a manager." Focus on how you provided **data-backed** feedback respectfully to save the project from a technical error.
+
+---
+
+## 5. Required Technical Keywords for your STAR Answers
+* **Power Query/M:** Mention "M-parameters" for dynamic filtering.
+* **DAX:** Mention "Context Transition" (Row context to Filter context).
+* **Dimensional Modeling:** Mention "Surrogate Keys" and "Bus Matrix."
+* **Security:** Mention "Object-Level Security (OLS)" vs "Row-Level Security (RLS)."
+---
 ## 🛠 Repository Structure
 
 * `/Modeling`: Deep dives into Star Schema vs. Snowflake, Data Vault, and normalization.
