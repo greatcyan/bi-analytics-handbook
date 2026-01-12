@@ -323,7 +323,7 @@ My family is my daily motivation—they inspire me and keep me grounded.
 
 I worked as an **Electronics Technician** for more than ten years.  
 During that time, I also explored **stock trading** and started learning **data analysis, data visualization, Python, and Excel**.  
-Those experiences gave me both a strong analytical foundation and the perspective of a **business user**—understanding how data connects to strategy and decision-making.  
+Those experiences gave me both a strong analytical foundation and the perspective of a **business user**—understanding how data and charts connects to strategy and decision-making.  
 
 That combination helped me transition into **data and business intelligence**.  
 Today, I specialize in **Power BI**, focusing not only on building dashboards but also on **data processing and ETL**, ensuring the data is clean, reliable, and delivers real business value.
