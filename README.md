@@ -318,4 +318,18 @@ Since Databricks cannot run locally, use the cloud-based free tier:
 ---
 
 ## 🚀 About the Author
-I am a Data Enthusiast focused on bridging the gap between raw data and executive insights. I use this repository to document my learning journey and professional growth in the cloud-scale analytics space.
+My name is **Cyrus Baruc**, I’m 34 years old, based in Lapu-Lapu City with my wife and kids.  
+My family is my daily motivation—they inspire me and keep me grounded.
+
+I worked as an **Electronics Technician** for more than ten years.  
+During that time, I also explored **stock trading** and started learning **data analysis, data visualization, Python, and Excel**.  
+Those experiences gave me both a strong analytical foundation and the perspective of a **business user**—understanding how data connects to strategy and decision-making.  
+
+That combination helped me transition into **data and business intelligence**.  
+Today, I specialize in **Power BI**, focusing not only on building dashboards but also on **data processing and ETL**, ensuring the data is clean, reliable, and delivers real business value.
+
+Outside of work, I enjoy **journaling** to capture ideas that come to me during the day, and I make sure to spend quality time with my family.
+
+Looking ahead, my goal is to **inspire other professionals to see the power of data**.  
+I believe **data is the new oil**—it fuels innovation, efficiency, and smarter decisions.  
+I want to continue growing in this field and use my success as a way to encourage others to embrace data as a driver of transformation.
