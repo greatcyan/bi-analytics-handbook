@@ -443,10 +443,32 @@ During that time, I also explored **stock trading** and started learning **data 
 Those experiences gave me both a strong analytical foundation and the perspective of a **business user**—understanding how data and charts connects to strategy and decision-making.  
 
 That combination helped me transition into **data and business intelligence**.  
-Today, I specialize in **Power BI**, focusing not only on building dashboards but also on **data processing and ETL**, ensuring the data is clean, reliable, and delivers real business value.
+Today, I specialize in **Power BI**, focusing not only on building dashboards but also on **data processing, data modeling and ETL**, ensuring the data is clean, reliable, and delivers real business value.
 
 Outside of work, I enjoy **journaling** to capture ideas that come to me during the day, and I make sure to spend quality time with my family.
 
-Looking ahead, my goal is to **inspire other professionals to see the power of data**.  
+My goal is to **inspire other professionals to see the power of data**.  
 I believe **data is the new oil**—it fuels innovation, efficiency, and smarter decisions.  
 I want to continue growing in this field and use my success as a way to encourage others to embrace data as a driver of transformation.
+
+## Projects Delivered
+
+At D&E, I design Power BI dashboards and semantic models that bring together data from over 100 projects across drafting, engineering, construction, and project management. I handle ETL from on-prem shared drives using Dataflows Gen1—since the company is mid-sized, this fits perfectly—while also leveraging Power Automate and SharePoint for workflow automation. I use DAX to generate weekly KPI summaries for management reporting. I also build paginated reports in SSRS and Power BI Report Builder for Dynamics 365, supporting health and safety, bidding, and revenue forecasting. On top of that, I’ve helped teams that utilized Microsoft Fabric for energy performance and monitoring reports for clients.
+
+---
+
+At Lexmark, I worked closely with finance stakeholders to gather business requirements and turn them into actionable BI solutions. I led multiple reporting projects, delivering dashboards for revenue, cost, OPEX, cost center analysis, extended warranty amortization, and worldwide expense bridging. These helped finance leaders track performance, forecast, and make informed decisions. I also ensured data accuracy and governance, and continuously improved the BI solutions as business needs evolved. (There is a one month onboarding so I was able to slowly grasping the role of a Finance Business Analyst. They hired me for technical.)
+
+--- 
+
+At AvantGuard, I initially worked with internal reporting, building dashboards to monitor users, machines, and devices across applications like Halopsa, NinjaOne, and Cove. Later, I moved on to client-facing BI projects, where I built semantic models and automated financial reporting, replacing manual spreadsheets. This reduced manual effort, improved accuracy and scalability, and gave clients clearer insights into their operations and finances. (do not mention the client; its confidential)
+
+--- 
+
+At Moderno Plant X, I built dashboards to monitor operational metrics like OEE in near real time, helping operations teams identify issues quickly and improve overall performance.
+
+--- 
+At Excigence, I built a Python application to manage electronics test procedures and scripts for semiconductor device production. It uses Pandas and Matplotlib to automatically analyze the test data, generate summarized logs, and create reports after each run, which really helped make the testing process faster and more accurate.
+
+Earlier in my career, I worked as a Senior Board Repair Specialist, supporting automated test equipment (Teradyne) for electronics production. I analyzed repair and failure data to identify recurring issues and improve processes, using problem-solving and troubleshooting techniques. I also used diagnostic tools that applied statistical analysis, including Process Capability Index, to detect micro-variances and subtle differences in test results. Additionally, I built Excel-based tracking systems to monitor performance, which gave me a strong foundation in data analysis that I now apply in BI and analytics.
+
