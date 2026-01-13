@@ -104,7 +104,7 @@ Focused on building efficient, scalable, and enterprise-ready models.
 
 ---
 
-## ☁️ Azure Synapse & Azure Data Factory (ADF)
+## 👉 Azure Synapse & Azure Data Factory (ADF)
 
 This section compares **Azure Synapse Analytics** and **Azure Data Factory (ADF)** with **Microsoft Fabric**, highlighting their engines, tools, and languages.  
 As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this helps connect the Azure data services with Fabric’s unified SaaS-first approach.
@@ -140,7 +140,7 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this help
 
 ---
 
-## 🚀 Deployment & Governance
+## 👉 Deployment & Governance
 
 Covers enterprise deployment, governance, and consulting best practices.
 
@@ -197,7 +197,7 @@ Focused on advisory decision-making and cost optimization.
 
 This guide is tailored for Senior Consultant roles at elite Microsoft partners. It focuses on architectural impact rather than just basic syntax.
 
-## 1. Consultant-Grade DAX Cheat Sheet
+## 👉1. Consultant-Grade DAX Cheat Sheet
 
 | Function | Primary Purpose | Senior-Level "Pro-Tip" |
 | :--- | :--- | :--- |
@@ -213,7 +213,7 @@ This guide is tailored for Senior Consultant roles at elite Microsoft partners. 
 
 ---
 
-## 2. Behavioral & Soft Skills for Consultants (The STAR Method)
+## 👉2. Behavioral & Soft Skills for Consultants (The STAR Method)
 
 As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituation, **T**ask, **A**ction, **R**esult format.
 
@@ -237,7 +237,7 @@ As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituat
 
 ---
 
-## 3. High-Level Architectural Concepts (2026 Focus)
+## 👉3. High-Level Architectural Concepts (2026 Focus)
 
 * **Medallion Architecture:** Be able to explain **Bronze** (Raw), **Silver** (Cleansed), and **Gold** (Aggregated/Business-Ready) layers within a Lakehouse.
 * **Vibe Coding / AI:** Mention how you use **Copilot for DAX** to speed up development, but emphasize that you manually audit the code for performance.
@@ -247,7 +247,7 @@ As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituat
 
 # ☑️📌Senior Consultant: Power BI & Data Specialist Study Guide
 
-## 1. Technical Deep-Dive: Power BI & Databricks Integration
+## 👉1. Technical Deep-Dive: Power BI & Databricks Integration
 
 Emphasizes the use of **Databricks** for data pipelines. You must be able to explain how the "Lakehouse" meets the "Dashboard."
 
@@ -260,7 +260,7 @@ Emphasizes the use of **Databricks** for data pipelines. You must be able to exp
 
 ---
 
-## 2. The "Consultant" Edge: Licensing & Discovery
+## 👉2. The "Consultant" Edge: Licensing & Discovery
 
 Expects you to act as a **trusted advisor** regarding Microsoft's complex licensing.
 
@@ -277,7 +277,7 @@ Expects you to act as a **trusted advisor** regarding Microsoft's complex licens
 
 ---
 
-## 3. Legacy Transitions: SQL Server & SSIS to Azure
+## 👉3. Legacy Transitions: SQL Server & SSIS to Azure
 
 The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to migrate these to the cloud.
 
@@ -287,7 +287,7 @@ The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to 
 
 ---
 
-## 4. Cultural Fit (The "Core Values" Interview)
+## 👉4. Cultural Fit (The "Core Values" Interview)
 
 Consulting firms explicitly hires for **Accountability** and **Candid Feedback**.
 
@@ -297,7 +297,7 @@ Consulting firms explicitly hires for **Accountability** and **Candid Feedback**
 
 ---
 
-## 5. Required Technical Keywords for your STAR Answers
+## 👉5. Required Technical Keywords for your STAR Answers
 * **Power Query/M:** Mention "M-parameters" for dynamic filtering.
 * **DAX:** Mention "Context Transition" (Row context to Filter context).
 * **Dimensional Modeling:** Mention "Surrogate Keys" and "Bus Matrix."
@@ -307,7 +307,7 @@ Consulting firms explicitly hires for **Accountability** and **Candid Feedback**
 
 This guide outlines how to build a local "Enterprise BI" sandbox on your laptop to practice the legacy and modern tools required for the Senior Consultant role.
 
-## 1. Local Software Installation (Order Matters)
+## 👉1. Local Software Installation (Order Matters)
 
 Follow this sequence to ensure all components communicate correctly:
 
@@ -320,7 +320,7 @@ Follow this sequence to ensure all components communicate correctly:
 
 ---
 
-## 2. Load Sample Data (AdventureWorks)
+## 👉2. Load Sample Data (AdventureWorks)
 
 Don't create data from scratch. Use the industry-standard "AdventureWorks" data warehouse.
 
@@ -333,7 +333,7 @@ Don't create data from scratch. Use the industry-standard "AdventureWorks" data 
 
 ---
 
-## 3. Practice Projects & Learning Path
+## 👉3. Practice Projects & Learning Path
 
 ### Project A: SQL Mastery (Foundation)
 * **Task**: Write a T-SQL view that joins `FactInternetSales` with `DimProduct` and `DimDate`. 
@@ -357,7 +357,7 @@ Don't create data from scratch. Use the industry-standard "AdventureWorks" data 
 
 ---
 
-## 4. Modern Cloud Practice (Databricks)
+## 👉4. Modern Cloud Practice (Databricks)
 
 Since Databricks cannot run locally, use the cloud-based free tier:
 
@@ -372,7 +372,7 @@ Since Databricks cannot run locally, use the cloud-based free tier:
 
 ---
 
-## 5. 🧩 SSRS, SSIS, SQL Server & Their Similarities to Fabric
+## 👉5.  SSRS, SSIS, SQL Server & Their Similarities to Fabric
 
 This section compares **traditional SQL Server tools** with **Microsoft Fabric**, highlighting their engines, tools, and languages.  
 As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this bridges the gap between legacy SQL Server technologies and Fabric’s modern cloud-native ecosystem.
@@ -425,7 +425,7 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this brid
 
 ---
 
-## 🚀 About the Author
+# ☑️📌 About the Author
 My name is **Cyrus Baruc**, I’m 34 years old, based in Lapu-Lapu City with my wife and kids.  
 My family is my daily motivation—they inspire me and keep me grounded.
 
