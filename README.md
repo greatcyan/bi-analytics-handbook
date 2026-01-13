@@ -303,8 +303,58 @@ Since Databricks cannot run locally, use the cloud-based free tier:
 
 ---
 
-## 5. Senior Consultant "Interview Talk-Track"
+## 5. 🧩 SSRS, SSIS, SQL Server & Their Similarities to Fabric
 
+This section compares **traditional SQL Server tools** with **Microsoft Fabric**, highlighting their engines, tools, and languages.  
+As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this bridges the gap between legacy SQL Server technologies and Fabric’s modern cloud-native ecosystem.
+
+---
+
+## Comparison Table
+
+| Topic | Answer |
+|-------|--------|
+| **Role of SSIS (SQL Server Integration Services)** | SSIS is the **ETL engine** for SQL Server, designed to move and transform data. |
+| **SSIS Engine, Tools, Languages** | - **Engine:** SSIS Runtime Engine (on-premises)<br>- **Tools:** Visual Studio (SQL Server Data Tools), SSIS Designer<br>- **Languages:** Primarily GUI-driven workflows, with support for **T-SQL** and **C#/.NET scripting** |
+| **SSIS vs. Fabric** | Fabric replaces SSIS with **Data Pipelines** and **Dataflows**, powered by **Spark** and **Power Query (M language)**. Both aim to **move and transform data** for analytics. |
+
+| **Role of SSRS (SQL Server Reporting Services)** | SSRS is the **reporting engine** for SQL Server, focused on paginated, operational reports. |
+| **SSRS Engine, Tools, Languages** | - **Engine:** SSRS Report Server<br>- **Tools:** Report Builder, Visual Studio (SSDT)<br>- **Languages:** **RDL (Report Definition Language)**, **T-SQL** for queries |
+| **SSRS vs. Fabric** | Fabric integrates reporting into **Power BI Workspaces**, using **DAX** and **M language** for interactive dashboards. Both deliver **insights to end-users**. |
+
+| **Role of SQL Server (Database Engine)** | SQL Server is the **relational database engine**, supporting queries, transactions, and secure storage. |
+| **SQL Server Engine, Tools, Languages** | - **Engine:** SQL Server Database Engine<br>- **Tools:** SQL Server Management Studio (SSMS), Azure Data Studio<br>- **Languages:** **T-SQL** (Transact-SQL) |
+| **SQL Server vs. Fabric** | Fabric offers **Lakehouse** (Spark-based) and **Warehouse** (T-SQL-based) engines. Both enable **data storage and querying for analysis**. |
+
+---
+
+## Key Takeaways
+
+- **Engines:**  
+  - SSIS → ETL Runtime Engine  
+  - SSRS → Report Server Engine  
+  - SQL Server → Relational Database Engine  
+  - Fabric → **Lakehouse (Spark)** + **Warehouse (T-SQL)** + **Power BI Engine (DAX/M)**  
+
+- **Tools:**  
+  - Legacy: SSMS, SSIS Designer, Report Builder  
+  - Fabric: Power BI Service, Data Pipelines, Notebooks, OneLake  
+
+- **Languages:**  
+  - Legacy: T-SQL, RDL, C#/VB.NET scripting  
+  - Fabric: T-SQL (Warehouse), Spark/Scala/Python (Lakehouse), DAX & M (Power BI/Dataflows)  
+
+- **Similarities in Purpose:**  
+  - SSIS ↔ Fabric Data Pipelines → **Data movement & transformation**  
+  - SSRS ↔ Fabric Power BI → **Reporting & insights delivery**  
+  - SQL Server ↔ Fabric Lakehouse/Warehouse → **Data storage & querying**  
+
+---
+## Why This Matters for Career Shifters
+- Legacy SQL Server tools are **engine-specific and siloed**.  
+- Fabric unifies these into a **cloud-native SaaS platform**, reducing complexity.  
+- Your **Power BI + Fabric certifications (PL-300, DP-600)** already cover the modern equivalents of SSIS, SSRS, and SQL Server.  
+---
 * **When asked about SSIS**: *"I am familiar with the architecture of SSIS packages, including Control Flow and Data Flow tasks, and I understand how to migrate that logic into modern cloud tools like Azure Data Factory or Databricks."*
 * **When asked about SQL**: *"I focus on writing SARGable (Search ARGumentable) queries and ensuring my views support Query Folding in Power BI to maximize performance."*
 ---
@@ -314,9 +364,7 @@ Since Databricks cannot run locally, use the cloud-based free tier:
 * `/SQL-Snippets`: Optimized queries for common BI reporting needs.
 * `/Power-BI-DAX`: Patterns for time intelligence and complex measures.
 * `/Pipelines`: Transformations and ETL logic using Databricks and Spark.
-
 ---
-
 ## 🚀 About the Author
 My name is **Cyrus Baruc**, I’m 34 years old, based in Lapu-Lapu City with my wife and kids.  
 My family is my daily motivation—they inspire me and keep me grounded.
