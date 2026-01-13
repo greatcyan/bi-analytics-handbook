@@ -379,7 +379,7 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this brid
 
 ---
 
-## Comparison Table
+**Comparison Table**
 
 | Topic | Answer |
 |-------|--------|
@@ -394,10 +394,6 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this brid
 | **Role of SQL Server (Database Engine)** | SQL Server is the **relational database engine**, supporting queries, transactions, and secure storage. |
 | **SQL Server Engine, Tools, Languages** | - **Engine:** SQL Server Database Engine<br>- **Tools:** SQL Server Management Studio (SSMS), Azure Data Studio<br>- **Languages:** **T-SQL** (Transact-SQL) |
 | **SQL Server vs. Fabric** | Fabric offers **Lakehouse** (Spark-based) and **Warehouse** (T-SQL-based) engines. Both enable **data storage and querying for analysis**. |
-
----
-
-## Key Takeaways
 
 - **Engines:**  
   - SSIS → ETL Runtime Engine  
@@ -419,21 +415,16 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this brid
   - SQL Server ↔ Fabric Lakehouse/Warehouse → **Data storage & querying**  
 
 ---
-## Why This Matters for Career Shifters
+
 - Legacy SQL Server tools are **engine-specific and siloed**.  
 - Fabric unifies these into a **cloud-native SaaS platform**, reducing complexity.  
 - Your **Power BI + Fabric certifications (PL-300, DP-600)** already cover the modern equivalents of SSIS, SSRS, and SQL Server.  
 ---
 * **When asked about SSIS**: *"I am familiar with the architecture of SSIS packages, including Control Flow and Data Flow tasks, and I understand how to migrate that logic into modern cloud tools like Azure Data Factory or Databricks."*
 * **When asked about SQL**: *"I focus on writing SARGable (Search ARGumentable) queries and ensuring my views support Query Folding in Power BI to maximize performance."*
----
-## 🛠 Repository Structure
 
-* `/Modeling`: Deep dives into Star Schema vs. Snowflake, Data Vault, and normalization.
-* `/SQL-Snippets`: Optimized queries for common BI reporting needs.
-* `/Power-BI-DAX`: Patterns for time intelligence and complex measures.
-* `/Pipelines`: Transformations and ETL logic using Databricks and Spark.
 ---
+
 ## 🚀 About the Author
 My name is **Cyrus Baruc**, I’m 34 years old, based in Lapu-Lapu City with my wife and kids.  
 My family is my daily motivation—they inspire me and keep me grounded.
@@ -451,7 +442,7 @@ My goal is to **inspire other professionals to see the power of data**.
 I believe **data is the new oil**—it fuels innovation, efficiency, and smarter decisions.  
 I want to continue growing in this field and use my success as a way to encourage others to embrace data as a driver of transformation.
 
-## Projects Delivered
+##☑️ Projects Delivered
 
 At D&E, I design Power BI dashboards and semantic models that bring together data from over 100 projects across drafting, engineering, construction, and project management. I handle ETL from on-prem shared drives using Dataflows Gen1—since the company is mid-sized, this fits perfectly—while also leveraging Power Automate and SharePoint for workflow automation. I use DAX to generate weekly KPI summaries for management reporting. I also build paginated reports in SSRS and Power BI Report Builder for Dynamics 365, supporting health and safety, bidding, and revenue forecasting. On top of that, I’ve helped teams that utilized Microsoft Fabric for energy performance and monitoring reports for clients.
 
