@@ -165,7 +165,7 @@ Focused on advisory decision-making and cost optimization.
 | **How would you advise a client with 300 users?** | I assess usage patterns, data volume, refresh frequency, and sharing needs. In many cases, Premium Capacity is cost-effective for large audiences, while Premium Per User may suffice if advanced features are limited to a smaller group. |
 
 ---
-## Technical & Architectural Interview Guide
+## 👉Technical & Architectural Interview Guide
 
 | Question Category | Scenario / Context | Expert Consultant Answer |
 | :--- | :--- | :--- |
@@ -180,14 +180,14 @@ Focused on advisory decision-making and cost optimization.
 | **Governance** | **Deployment Pipelines** | Use **Power BI Deployment Pipelines** (Dev -> Test -> Prod). This ensures consistency, allows for parameterizing connection strings, and prevents accidental deletions in production. |
 | **Consulting Skills** | **Ambiguous Requirements** | Start with **KPI Discovery**. Ask: "What decision will this report help you make?" and "What does success look like in 6 months?" Build a Wireframe (low-fidelity) before touching the data. |
 
-## Key DAX Functions to Review
+## 👉Key DAX Functions to Review
 * **`CALCULATE()`**: The most important function; modifies filter context.
 * **`REMOVEFILTERS()` / `ALL()`**: Essential for calculating percentages of totals.
 * **`USERPRINCIPALNAME()`**: Core for dynamic security.
 * **`SUMMARIZECOLUMNS()`**: The gold standard for querying data in modern Power BI.
 * **`TREATAS()`**: Useful for virtual relationships when a physical one isn't possible.
 
-## Interview Strategy: 
+## 👉Interview Strategy: 
 * **Azure-Only Focus:** Emphasize that you are a specialist in the Microsoft ecosystem.
 * **People First:** Mention how your solutions enable "Data Democracy" (making data easy for non-technical users).
 * **Performance:** Always mention that a report is only good if it's fast and accurate.
@@ -442,7 +442,7 @@ My goal is to **inspire other professionals to see the power of data**.
 I believe **data is the new oil**—it fuels innovation, efficiency, and smarter decisions.  
 I want to continue growing in this field and use my success as a way to encourage others to embrace data as a driver of transformation.
 
-##☑️ Projects Delivered
+## 👉 Projects Delivered
 
 At D&E, I design Power BI dashboards and semantic models that bring together data from over 100 projects across drafting, engineering, construction, and project management. I handle ETL from on-prem shared drives using Dataflows Gen1—since the company is mid-sized, this fits perfectly—while also leveraging Power Automate and SharePoint for workflow automation. I use DAX to generate weekly KPI summaries for management reporting. I also build paginated reports in SSRS and Power BI Report Builder for Dynamics 365, supporting health and safety, bidding, and revenue forecasting. On top of that, I’ve helped teams that utilized Microsoft Fabric for energy performance and monitoring reports for clients.
 
