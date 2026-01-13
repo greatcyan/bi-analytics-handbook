@@ -71,6 +71,47 @@ Focused on building efficient, scalable, and enterprise-ready models.
 
 ---
 
+## ☁️ Azure Synapse & Azure Data Factory (ADF)
+
+This section compares **Azure Synapse Analytics** and **Azure Data Factory (ADF)** with **Microsoft Fabric**, highlighting their engines, tools, and languages.  
+As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this helps connect the Azure data services with Fabric’s unified SaaS-first approach.
+
+| Topic | Answer |
+|-------|--------|
+| **Role of Azure Synapse Analytics** | Synapse is a **cloud-based analytics service** that combines big data and data warehousing. It enables querying structured and semi-structured data at scale. |
+| **Synapse Engine, Tools, Languages** | - **Engine:** Dedicated SQL Pools (MPP engine), On-demand Serverless SQL<br>- **Tools:** Synapse Studio, Azure Portal<br>- **Languages:** **T-SQL**, integration with **Spark (Python, Scala, R)** |
+| **Synapse vs. Fabric** | Synapse overlaps with **Fabric Warehouse** (T-SQL focus) and **Fabric Lakehouse** (Spark focus). Both provide scalable analytics, but Fabric integrates more tightly with **Power BI** and **OneLake** for a unified SaaS experience. |
+
+| **Role of Azure Data Factory (ADF)** | ADF is the **cloud-native ETL/ELT service**, orchestrating data movement and transformation across diverse sources. |
+| **ADF Engine, Tools, Languages** | - **Engine:** ADF Integration Runtime (cloud or self-hosted)<br>- **Tools:** ADF Studio (Azure Portal)<br>- **Languages:** GUI-driven pipelines, **Power Query (M language)**, **JSON** for pipeline definitions |
+| **ADF vs. Fabric** | ADF is most similar to **Fabric Data Pipelines**. Both orchestrate data ingestion and transformation, but Fabric simplifies this by embedding pipelines directly into the SaaS ecosystem with **OneLake** as the central storage. |
+
+- **Azure Synapse** and **ADF** are Azure-native services that map closely to Fabric’s **Warehouse, Lakehouse, and Data Pipelines**.  
+- **Engines:**  
+  - Synapse → Dedicated SQL Pools & Spark runtime  
+  - ADF → Integration Runtime  
+  - Fabric → Warehouse (T-SQL), Lakehouse (Spark), Pipelines (M/Power Query)  
+- **Tools:**  
+  - Synapse Studio ↔ Fabric Workspaces  
+  - ADF Studio ↔ Fabric Data Pipelines UI  
+- **Languages:**  
+  - Synapse → T-SQL + Spark (Python/Scala/R)  
+  - ADF → JSON + M language  
+  - Fabric → T-SQL + Spark + DAX/M  
+
+- **Similarities in Purpose:**  
+  - Synapse ↔ Fabric Warehouse/Lakehouse → **Scalable analytics & querying**  
+  - ADF ↔ Fabric Data Pipelines → **Data movement & transformation**  
+
+---
+
+### Why This Matters for Career Shifters
+
+- If you’ve worked with **Synapse or ADF**, transitioning to **Fabric** is straightforward — the concepts are nearly identical but unified in one SaaS platform.  
+- If you’re new (like shifting from Power BI only), Fabric abstracts much of the complexity, letting you focus on **analytics and storytelling** rather than infrastructure.  
+
+---
+
 ## 🚀 Deployment & Governance
 
 Covers enterprise deployment, governance, and consulting best practices.
