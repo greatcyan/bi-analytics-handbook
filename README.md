@@ -33,6 +33,7 @@ This section focuses on advanced DAX concepts, calculation behavior, and perform
 
 ---
 
+
 ## 🔄 Power Query / M (Data Preparation)
 
 Focused on data transformation, query folding, and applying logic in the correct layer.
@@ -44,6 +45,38 @@ Focused on data transformation, query folding, and applying logic in the correct
 | **Combining multiple data sources** | I combine multiple sources using merge or append operations while monitoring query folding. When structures differ, I normalize them into a common schema before loading into the semantic model. |
 | **When do you use Power Query vs DAX?** | I use Power Query for structural, repeatable transformations that should occur at refresh time. I use DAX for calculations that must respond dynamically to filters, slicers, and user interaction. |
 | **Handling data quality issues** | I handle data quality issues as early as possible by validating keys, removing duplicates, standardizing values, and flagging anomalies. This improves trust, consistency, and simplifies downstream modeling and reporting. |
+
+ 🔹 Basic Functions
+
+| Function | Purpose | Syntax Example |
+|----------|---------|----------------|
+| `Text.Proper` | Converts text to proper case (first letter capitalized). | `Text.Proper("hello world")` → `"Hello World"` |
+| `Text.Upper` | Converts text to uppercase. | `Text.Upper("hello")` → `"HELLO"` |
+| `Text.Lower` | Converts text to lowercase. | `Text.Lower("HELLO")` → `"hello"` |
+| `Number.Round` | Rounds a number to the nearest integer or specified decimals. | `Number.Round(3.14159, 2)` → `3.14` |
+| `DateTime.LocalNow` | Returns the current system date and time. | `DateTime.LocalNow()` |
+| `Table.RenameColumns` | Renames columns in a table. | `Table.RenameColumns(Source, {{"OldName","NewName"}})` |
+| `Table.RemoveColumns` | Removes specified columns. | `Table.RemoveColumns(Source, {"Column1","Column2"})` |
+| `Table.SelectRows` | Filters rows based on a condition. | `Table.SelectRows(Source, each [Sales] > 1000)` |
+
+
+🔹 Advanced Functions
+
+| Function | Purpose | Syntax Example |
+|----------|---------|----------------|
+| `Table.Group` | Groups rows by one or more columns and applies aggregations. | `Table.Group(Source, {"Region"}, {{"TotalSales", each List.Sum([Sales]), type number}})` |
+| `Table.Join` | Joins two tables on a matching key. | `Table.Join(Table1, "ID", Table2, "ID", JoinKind.Inner)` |
+| `Table.Combine` | Appends multiple tables into one. | `Table.Combine({Table1, Table2})` |
+| `Table.AddColumn` | Adds a calculated column. | `Table.AddColumn(Source, "DiscountedPrice", each [Price] * 0.9)` |
+| `Record.FieldValues` | Returns values from a record as a list. | `Record.FieldValues([Name="Cyrus", Age=35])` → `{"Cyrus", 35}` |
+| `List.Transform` | Applies a function to each item in a list. | `List.Transform({1,2,3}, each _ * 2)` → `{2,4,6}` |
+| `Table.ExpandRecordColumn` | Expands nested records into columns. | `Table.ExpandRecordColumn(Source, "Details", {"City","Country"})` |
+| `Table.Buffer` | Forces evaluation and caches a table in memory (useful for performance tuning). | `Table.Buffer(Source)` |
+
+- **Basic functions** handle text, numbers, dates, and simple table operations.  
+- **Advanced functions** deal with grouping, joining, transformations, and performance optimization.  
+- Always consider **query folding** when applying transformations — push logic back to the source whenever possible.  
+- Use **Power Query (M)** for repeatable, refresh-time transformations; use **DAX** for dynamic, user-driven calculations.  
 
 ---
 
@@ -102,10 +135,6 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this help
 - **Similarities in Purpose:**  
   - Synapse ↔ Fabric Warehouse/Lakehouse → **Scalable analytics & querying**  
   - ADF ↔ Fabric Data Pipelines → **Data movement & transformation**  
-
----
-
-### Why This Matters for Career Shifters
 
 - If you’ve worked with **Synapse or ADF**, transitioning to **Fabric** is straightforward — the concepts are nearly identical but unified in one SaaS platform.  
 - If you’re new (like shifting from Power BI only), Fabric abstracts much of the complexity, letting you focus on **analytics and storytelling** rather than infrastructure.  
