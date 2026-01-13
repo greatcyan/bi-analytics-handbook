@@ -114,7 +114,6 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this help
 | **Role of Azure Synapse Analytics** | Synapse is a **cloud-based analytics service** that combines big data and data warehousing. It enables querying structured and semi-structured data at scale. |
 | **Synapse Engine, Tools, Languages** | - **Engine:** Dedicated SQL Pools (MPP engine), On-demand Serverless SQL<br>- **Tools:** Synapse Studio, Azure Portal<br>- **Languages:** **T-SQL**, integration with **Spark (Python, Scala, R)** |
 | **Synapse vs. Fabric** | Synapse overlaps with **Fabric Warehouse** (T-SQL focus) and **Fabric Lakehouse** (Spark focus). Both provide scalable analytics, but Fabric integrates more tightly with **Power BI** and **OneLake** for a unified SaaS experience. |
-
 | **Role of Azure Data Factory (ADF)** | ADF is the **cloud-native ETL/ELT service**, orchestrating data movement and transformation across diverse sources. |
 | **ADF Engine, Tools, Languages** | - **Engine:** ADF Integration Runtime (cloud or self-hosted)<br>- **Tools:** ADF Studio (Azure Portal)<br>- **Languages:** GUI-driven pipelines, **Power Query (M language)**, **JSON** for pipeline definitions |
 | **ADF vs. Fabric** | ADF is most similar to **Fabric Data Pipelines**. Both orchestrate data ingestion and transformation, but Fabric simplifies this by embedding pipelines directly into the SaaS ecosystem with **OneLake** as the central storage. |
