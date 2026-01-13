@@ -444,19 +444,19 @@ I want to continue growing in this field and use my success as a way to encourag
 
 ## 👉 Projects Delivered
 
-At D&E, I design Power BI dashboards and semantic models that bring together data from over 100 projects across drafting, engineering, construction, and project management. I handle ETL from on-prem shared drives using Dataflows Gen1—since the company is mid-sized, this fits perfectly—while also leveraging Power Automate and SharePoint for workflow automation. I use DAX to generate weekly KPI summaries for management reporting. I also build paginated reports in SSRS and Power BI Report Builder for Dynamics 365, supporting health and safety, bidding, and revenue forecasting. On top of that, I’ve helped teams that utilized Microsoft Fabric for energy performance and monitoring reports for clients.
+I’m currently working at D&E Air Conditioning as a Power BI Developer, where I design dashboards and semantic models that consolidate data from over 100 projects across departments and operations, including drafting, engineering, construction, and business development. I handle ETL from on-prem shared drives using Dataflows Gen1, while also leveraging DAX, Power Automate, and SharePoint for workflow automation and generating weekly aggregated historical data. I build paginated reports in SSRS and Power BI Report Builder for Dynamics 365, supporting health and safety, bidding, and revenue forecasting. In short, I’ve delivered and automated end-to-end analytics and reporting solutions, covering business requirements gathering, development, and delivery of reports. I’ve also helped teams using Microsoft Fabric to support client projects that monitor energy performance and consumption.
 
 ---
 
-At Lexmark, I worked closely with finance stakeholders to gather business requirements and turn them into actionable BI solutions. I led multiple reporting projects, delivering dashboards for revenue, cost, OPEX, cost center analysis, extended warranty amortization, and worldwide expense bridging. These helped finance leaders track performance, forecast, and make informed decisions. I also ensured data accuracy and governance, and continuously improved the BI solutions as business needs evolved. (There is a one month onboarding so I was able to slowly grasping the role of a Finance Business Analyst. They hired me for technical.)
+Before D&E, I worked at Lexmark as a Finance Business Analyst. I partnered closely with finance stakeholders to gather business requirements and translate them into BI solutions for forecasting, budgeting, and performance reporting. I led multiple reporting projects, delivering dashboards for revenue, cost, OPEX, cost center analysis, extended warranty amortization, and worldwide expense bridging. I ensured data accuracy and governance and continuously optimized BI solutions to support evolving business needs.
 
 --- 
 
-At AvantGuard, I initially worked with internal reporting, building dashboards to monitor users, machines, and devices across applications like Halopsa, NinjaOne, and Cove. Later, I moved on to client-facing BI projects, where I built semantic models and automated financial reporting, replacing manual spreadsheets. This reduced manual effort, improved accuracy and scalability, and gave clients clearer insights into their operations and finances. (do not mention the client; its confidential)
+I also worked part-time at AvantGuard, where I integrated data from IT and endpoint management applications such as Halopsa, NinjaOne, Cove, and others to build internal dashboards monitoring users, machines, and devices. Later, I delivered client-facing BI projects, performing ETL, dimensional modeling, and dashboard development to automate financial reporting and replace manual spreadsheets. This reduced manual effort, improved accuracy and scalability, and gave clients clearer operational and financial insights. 
 
 --- 
 
-At Moderno Plant X, I built dashboards to monitor operational metrics like OEE in near real time, helping operations teams identify issues quickly and improve overall performance.
+At Moderno Plant X, I built dashboards to monitor manufacturing operational metrics, including Overall Equipment Effectiveness (OEE), in near real time, helping operations teams identify issues quickly and improve overall performance.
 
 --- 
 At Excigence, I built a Python application to manage electronics test procedures and scripts for semiconductor device production. It uses Pandas and Matplotlib to automatically analyze the test data, generate summarized logs, and create reports after each run, which really helped make the testing process faster and more accurate.
