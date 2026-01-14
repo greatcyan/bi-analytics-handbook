@@ -443,6 +443,8 @@ I believe **data is the new oil**—it fuels innovation, efficiency, and smarter
 I want to continue growing in this field and use my success as a way to encourage others to embrace data as a driver of transformation.
 
 # ⭐⭐⭐⭐ Projects
+<img width="126" height="113" alt="image" src="https://github.com/user-attachments/assets/85f2242f-797b-4d22-8664-b0ccb8375e2c" />
+
 **Client**: D&E Air Conditioning Pty Ltd — Australia‑wide Mechanical Services & Air Conditioning solutions
 
 **Projects Supported:**  
@@ -451,7 +453,7 @@ I want to continue growing in this field and use my success as a way to encourag
 - Hospitals, laboratories, and pharmaceutical environments  
 - Data centres and technology hubs  
 - Education and government infrastructure
-- 
+  
 **Stakeholders:** Project Managers, Construction Managers, Engineering Managers, Executives, General Manager
   
 **Projects:**  Project Tracking Dashboards | Tender Phasing & Revenue Forecasting | Dynamics 365 Model‑Driven Power Apps Support
