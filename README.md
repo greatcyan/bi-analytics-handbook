@@ -442,9 +442,21 @@ My goal is to **inspire other professionals to see the power of data**.
 I believe **data is the new oil**—it fuels innovation, efficiency, and smarter decisions.  
 I want to continue growing in this field and use my success as a way to encourage others to embrace data as a driver of transformation.
 
-## 👉 Projects Delivered
-
-I’m currently working at D&E Air Conditioning as a Power BI Developer, where I design dashboards and semantic models that consolidate data from over 100 projects across departments and operations, including drafting, engineering, construction, and business development. I handle ETL from on-prem shared drives using Dataflows Gen1, while also leveraging DAX, Power Automate, and SharePoint for workflow automation and generating weekly aggregated historical data. I build paginated reports in SSRS and Power BI Report Builder for Dynamics 365, supporting health and safety, bidding, and revenue forecasting. In short, I’ve delivered and automated end-to-end analytics and reporting solutions, covering business requirements gathering, development, and delivery of reports. I’ve also helped teams using Microsoft Fabric to support client projects that monitor energy performance and consumption.
+# ⭐⭐⭐⭐ Projects
+**Client**: D&E Air Conditioning Pty Ltd — Australia‑wide Mechanical Services & Air Conditioning solutions
+**Projects Supported:**  
+- Large‑scale commercial buildings (offices, hotels, shopping centres)  
+- Industrial facilities and manufacturing plants  
+- Hospitals, laboratories, and pharmaceutical environments  
+- Data centres and technology hubs  
+- Education and government infrastructure  
+**Stakeholders:** Project Managers, Construction Managers, Engineering Managers, Executives, General Manager
+**Projects:**  Project Tracking Dashboards | Tender Phasing & Revenue Forecasting | Dynamics 365 Model‑Driven Power Apps Support
+- Gathered business requirements using a structured template, ensuring stakeholder alignment and clarity of project objectives.
+- Prepared data using Dataflows Gen1 and Power Query, applying medallion architecture principles to process structured, semi‑structured, and unstructured data, consolidating diverse on‑premises sources into a staging dataflow for streamlined transformation and enterprise reporting.
+- Applied snowflake and star schema principles to design optimized data models, improving query performance and reducing report load times in the reporting layer.
+- Developed executive‑ready dashboards with drill‑down analytics, enabling self‑service insights through intuitive visualizations and paginated reports tailored to business needs.
+- Validated data accuracy, managed workspaces, and applied security roles for secure asset sharing; performed ad‑hoc analyses to resolve data mismatches and deliver additional views and features requested by stakeholders.
 
 ---
 
