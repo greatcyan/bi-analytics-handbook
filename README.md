@@ -444,13 +444,16 @@ I want to continue growing in this field and use my success as a way to encourag
 
 # ⭐⭐⭐⭐ Projects
 **Client**: D&E Air Conditioning Pty Ltd — Australia‑wide Mechanical Services & Air Conditioning solutions
+
 **Projects Supported:**  
 - Large‑scale commercial buildings (offices, hotels, shopping centres)  
 - Industrial facilities and manufacturing plants  
 - Hospitals, laboratories, and pharmaceutical environments  
 - Data centres and technology hubs  
-- Education and government infrastructure  
+- Education and government infrastructure
+- 
 **Stakeholders:** Project Managers, Construction Managers, Engineering Managers, Executives, General Manager
+  
 **Projects:**  Project Tracking Dashboards | Tender Phasing & Revenue Forecasting | Dynamics 365 Model‑Driven Power Apps Support
 - Gathered business requirements using a structured template, ensuring stakeholder alignment and clarity of project objectives.
 - Prepared data using Dataflows Gen1 and Power Query, applying medallion architecture principles to process structured, semi‑structured, and unstructured data, consolidating diverse on‑premises sources into a staging dataflow for streamlined transformation and enterprise reporting.
