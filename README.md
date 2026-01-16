@@ -2,6 +2,8 @@
 
 Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns, advanced DAX, and end-to-end data pipeline best practices.
 
+How do you handle nulls? For business context I usually keep nulls as null to avoid skewing metrics and only replace them when business rules are clear. In data science, it's handle thru imputation (mean, median, mode).
+
 ---
 
 ## 🧠 Data Modeling 
