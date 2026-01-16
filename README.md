@@ -4,7 +4,15 @@ Welcome to my personal knowledge base for **Business Intelligence and Analytics 
 
 How do you handle nulls? For business context I usually keep nulls as null to avoid skewing metrics and only replace them when business rules are clear. In data science, it's handle thru imputation (mean, median, mode).
 
----
+**Questions to ask:** 
+
+- For a new consultant, is there a technical onboarding—like standards, architectures, or best practices—or do we jump straight into project delivery?
+
+- What’s the typical data maturity of clients when projects start? Do most projects involve foundational data work or advanced analytics?
+
+- Which tools or Microsoft stack components do senior consultants use most frequently across projects—Power BI, Fabric, Dataflows, or others?
+
+ - Does 3Cloud follow specific modeling or ETL standards across clients, or is it adjusted per client environment?
 
 ## 🧠 Data Modeling 
 
