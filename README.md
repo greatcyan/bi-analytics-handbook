@@ -132,18 +132,45 @@ Focused on data transformation, query folding, and applying logic in the correct
 
 ---
 
----
-
-## ⚡ Power BI Performance Optimization
+## Power BI Performance Optimization
 
 Focused on building efficient, scalable, and enterprise-ready models.
 
 | Topic | Answer |
 | :--- | :--- |
-| **Import vs DirectQuery vs Composite Models** | Import mode provides the best performance and is preferred whenever possible. DirectQuery is used for near real-time requirements but introduces performance trade-offs. Composite models combine both to balance flexibility and performance. |
-| **Cardinality and its impact** | High-cardinality columns reduce compression efficiency and increase memory usage. I reduce cardinality by removing unnecessary columns, using surrogate keys, and avoiding high-cardinality text fields in fact tables. |
-| **Model size optimization** | I optimize model size by removing unused columns, selecting appropriate data types, reducing precision where possible, and pushing transformations upstream. Smaller models refresh faster and perform better. |
-| **Performance Analyzer usage** | I use Performance Analyzer to identify slow visuals, expensive DAX queries, and inefficient interactions. This helps isolate whether issues originate from the model, DAX, or report design. |
+| **Import vs DirectQuery vs Composite Models** | Import mode provides the best performance and is preferred whenever possible. DirectQuery is used for near real-time requirements but introduces performance trade-offs such as increased query latency and source load. Composite models combine both to balance flexibility and performance. |
+| **Cardinality and its impact** | High-cardinality columns reduce compression efficiency and increase memory usage. I reduce cardinality by removing unnecessary columns, using surrogate keys, splitting date/time columns, and avoiding high-cardinality text fields in fact tables. |
+| **Model size optimization** | I optimize model size by removing unused columns, selecting appropriate data types, reducing numeric precision, disabling Auto Date/Time, and pushing transformations upstream. Smaller models refresh faster and improve query performance. |
+| **Performance Analyzer usage** | I use Performance Analyzer to identify slow visuals, expensive DAX queries, and inefficient interactions. This helps isolate whether issues originate from the model, DAX, visuals, or report layout. |
+| **DAX performance best practices** | I reuse base measures, avoid unnecessary iterators, prefer Boolean filter arguments over FILTER, minimize context transitions, and test performance using DAX Studio. |
+| **Visual-level optimization** | I limit the number of visuals per page, avoid high-cardinality slicers, reduce cross-highlighting, and use simple visuals for large datasets. This improves report rendering and user experience. |
+| **Incremental refresh** | I use incremental refresh to reduce refresh times and resource usage by processing only new or changed data, which is critical for large fact tables. |
+
+---
+
+### 🔹 External Tools for Optimization & Management
+
+| Tool | Purpose |
+|------|--------|
+| **DAX Studio** | Analyze query plans, measure execution time, inspect storage engine vs formula engine usage, and optimize DAX performance. |
+| **Tabular Editor** | Manage measures, calculation groups, perspectives, translations, and advanced metadata. Essential for enterprise semantic model governance. |
+| **VertiPaq Analyzer** | Analyze model size, column cardinality, and compression efficiency to identify memory bottlenecks. |
+| **SQL Server Profiler / Azure Profiler** | Capture query traces for DirectQuery models and analyze source-side performance issues. |
+| **Power BI Service Metrics App** | Monitor dataset refreshes, report usage, performance trends, and capacity impact in the Power BI Service. |
+| **Fabric Capacity Metrics App** | Monitor CU consumption, throttling, and workload distribution in Microsoft Fabric capacities. |
+| **ALM Toolkit** | Compare, validate, and deploy semantic models across environments (Dev/Test/Prod). |
+| **Power BI REST API** | Automate dataset refreshes, monitor deployments, and integrate governance into CI/CD pipelines. |
+
+---
+
+### 🔹 Enterprise Performance & Governance Practices
+
+- Use **star schema modeling** with single-direction relationships.
+- Enforce **naming conventions** and measure organization.
+- Implement **calculation groups** for reusable time intelligence and KPIs.
+- Apply **incremental refresh and partitioning** for large datasets.
+- Monitor **capacity usage** and optimize workloads proactively.
+- Use **external tools** regularly—not just when performance issues arise.
 
 ---
 
