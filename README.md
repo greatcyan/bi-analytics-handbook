@@ -377,6 +377,28 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this help
 | **Consulting Skills** | **Ambiguous Requirements** | Start with **KPI Discovery**. Ask: "What decision will this report help you make?" and "What does success look like in 6 months?" Build a Wireframe (low-fidelity) before touching the data. |
 
 ---
+
+## 1️⃣0️⃣ T-SQL (DDL & DML)
+
+T-SQL is a core skill for building, managing, and querying relational data platforms such as **SQL Server**, **Azure SQL Database**, and **Azure Synapse Analytics**. It supports both **schema design (DDL)** and **data manipulation (DML)**, which are foundational for reliable analytics and reporting.
+
+| Topic | Answer |
+| :--- | :--- |
+| **What is T-SQL and where is it used?** | T-SQL (Transact-SQL) is Microsoft’s extension of SQL used in SQL Server, Azure SQL Database, and Azure Synapse Analytics. It extends standard SQL with procedural features such as variables, control-of-flow logic, error handling, and transactions. |
+| **What is DDL in T-SQL?** | DDL (Data Definition Language) defines and manages database objects such as tables, views, schemas, and indexes. Common DDL statements include CREATE, ALTER, DROP, and TRUNCATE. |
+| **CREATE TABLE example** | ```sql CREATE TABLE Sales ( SalesID INT PRIMARY KEY, OrderDate DATE, Amount DECIMAL(10,2), CustomerID INT ); ``` |
+| **ALTER vs DROP TABLE** | ALTER TABLE modifies an existing table without losing data, while DROP TABLE permanently removes the table and all its data. ALTER is preferred for schema evolution in analytics systems. |
+| **TRUNCATE vs DELETE** | TRUNCATE TABLE removes all rows efficiently and resets identity values but cannot be filtered. DELETE removes rows based on a WHERE clause and logs each deletion. |
+| **What is DML in T-SQL?** | DML (Data Manipulation Language) is used to query and modify data inside tables. Common DML statements include SELECT, INSERT, UPDATE, and DELETE. |
+| **SELECT example** | ```sql SELECT OrderDate, Amount FROM Sales WHERE Amount > 1000; ``` |
+| **INSERT example** | ```sql INSERT INTO Sales (SalesID, OrderDate, Amount, CustomerID) VALUES (1, '2024-01-01', 1500.00, 101); ``` |
+| **UPDATE example** | ```sql UPDATE Sales SET Amount = 1600.00 WHERE SalesID = 1; ``` |
+| **DELETE example** | ```sql DELETE FROM Sales WHERE SalesID = 1; ``` |
+| **Why are transactions important?** | Transactions ensure data integrity by grouping multiple DML statements into a single unit of work using BEGIN TRANSACTION, COMMIT, and ROLLBACK. |
+| **Best practices for BI workloads** | Avoid SELECT *, filter early, use proper indexing, separate DDL from DML, and use transactions for critical updates to ensure reliability and auditability. |
+
+---
+
 # ☑️Soft Skills
 
 ## 1️⃣Behavioral & Soft Skills for Consultants (The STAR Method)
