@@ -398,6 +398,47 @@ T-SQL is a core skill for building, managing, and querying relational data platf
 | **Best practices for BI workloads** | Avoid SELECT *, filter early, use proper indexing, separate DDL from DML, and use transactions for critical updates to ensure reliability and auditability. |
 
 ---
+## 1️⃣1️⃣Power BI Delivery & DevOps Concepts
+
+| Term | Full Name | What It Is | Purpose | Purpose in Delivering a Power BI Solution | Typical Use Case |
+|-----|----------|------------|---------|------------------------------------------|------------------|
+| **Azure DevOps Git** | Azure DevOps Git Repository | A Git-based source control system in Azure DevOps | Version control, collaboration, and CI/CD integration | Ensures controlled, auditable, and collaborative development of Power BI artifacts across teams | Store and manage PBIP projects, SQL scripts, pipelines, and documentation |
+| **PBIP** | Power BI Project | A folder-based Power BI project format | Enables source control and CI/CD for Power BI | Allows team-based development, code reviews, branching, and automated deployments of Power BI solutions | Enterprise Power BI development with Dev/Test/Prod environments |
+| **PBIT** | Power BI Template | A Power BI file without data | Reusable report and model structure | Standardizes report design, calculations, and data models while preventing data exposure | Distribute reusable report templates to analysts or clients |
+| **PBIR** | Power BI Report (Item) | Report definition artifact used in Fabric / Power BI Service | Modular and Git-friendly report definition | Supports granular versioning and deployment of reports as part of an end-to-end Power BI solution | Fabric-enabled workspaces with Git integration |
+| **Deployment Pipelines** | Power BI Deployment Pipelines | Environment promotion workflow (Dev → Test → Prod) | Controlled and governed Power BI releases | Ensures reliable, consistent, and low-risk delivery of Power BI reports and semantic models to production | Enterprise-grade Power BI release management |
+
+---
+
+## 1️⃣2️⃣Power BI Storage Modes
+
+Power BI supports different storage modes that determine **how data is stored and queried**, affecting performance, data freshness, and scalability. These modes are critical in designing enterprise-grade solutions.
+
+| Storage Mode | What It Is | Purpose | Purpose in Delivering a Power BI Solution | Typical Use Case |
+|-------------|------------|---------|------------------------------------------|-----------------|
+| **Import Mode** | Data is imported and stored in Power BI’s internal cache | Fast performance and full modeling capabilities | Provides optimal performance for analytical models and dashboards; ideal for scheduled refreshes | Standard enterprise dashboards where speed is important and dataset size is manageable |
+| **DirectQuery** | Queries data directly from the source in real-time | Real-time access without storing data in Power BI | Ensures up-to-date information while minimizing dataset size | Operational dashboards needing live data from SQL Server, SAP, or other sources |
+| **Live Connection** | Connects directly to a semantic model (e.g., SSAS / Fabric) | Uses centralized data models without importing | Promotes model governance, reusability, and consistency across multiple reports | Multi-report deployments using a single certified dataset |
+| **Direct Lake** | Queries data directly from Azure Data Lake / Fabric tables | Combines storage and processing in large-scale data lakes | Enables high-performance analytics on massive datasets without moving the data | Enterprise-level Fabric projects handling very large datasets |
+
+---
+
+## 1️⃣3️⃣Warehouse vs Lakehouse in Microsoft Fabric
+
+In Microsoft Fabric, understanding the difference between a **Warehouse** and a **Lakehouse** is key for building scalable, governed, and performant Power BI solutions.
+
+| Feature | Warehouse (Fabric) | Lakehouse (Fabric) |
+|---------|-------------------|------------------|
+| **Definition** | Structured storage optimized for analytics and reporting | Combines lake storage and warehouse features; stores raw and curated data |
+| **Data Type** | Structured (tables, columns) | Structured, semi-structured, unstructured (Parquet, CSV, JSON, images) |
+| **Storage** | Relational / Fabric warehouse tables | Delta tables in OneLake (Fabric’s unified data lake) |
+| **Performance** | High query performance for analytics & dashboards | High scalability; optimized with Direct Lake for analytics without moving data |
+| **Governance** | Strong schema enforcement, ACID transactions | Governed with Fabric Lakehouse policies, Delta ACID transactions, lineage, and access control |
+| **Use Case in Power BI / Fabric** | Best for enterprise dashboards, aggregated metrics, and curated reporting | Ideal for raw data ingestion, AI/ML scenarios, and large-scale analytical datasets |
+| **Fabric Examples** | Fabric Warehouse Tables, Synapse Data Warehouse (Fabric integration) | Fabric Lakehouse Tables (OneLake), Direct Lake datasets in Power BI |
+
+---
+
 
 # ☑️Soft Skills
 
