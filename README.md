@@ -54,49 +54,83 @@ This section focuses on advanced DAX concepts, calculation behavior, and perform
 ---
 
 
-## 🔄 Power Query / M (Data Preparation)
+
+## Power Query / M (Data Preparation)
 
 Focused on data transformation, query folding, and applying logic in the correct layer.
 
 | Topic | Answer |
 | :--- | :--- |
-| **What transformations do you perform in Power Query?** | I perform data cleansing, shaping, merging, appending, deduplication, and standardization. This includes fixing data types, renaming columns, handling null values, and applying consistent business rules before loading data into the model. |
-| **What is query folding and why is it important?** | Query folding occurs when Power Query pushes transformations back to the source system. It improves refresh performance, reduces memory usage, and leverages the processing power of the data source. |
-| **Combining multiple data sources** | I combine multiple sources using merge or append operations while monitoring query folding. When structures differ, I normalize them into a common schema before loading into the semantic model. |
-| **When do you use Power Query vs DAX?** | I use Power Query for structural, repeatable transformations that should occur at refresh time. I use DAX for calculations that must respond dynamically to filters, slicers, and user interaction. |
-| **Handling data quality issues** | I handle data quality issues as early as possible by validating keys, removing duplicates, standardizing values, and flagging anomalies. This improves trust, consistency, and simplifies downstream modeling and reporting. |
+| **What transformations do you perform in Power Query?** | I perform data cleansing, shaping, merging, appending, deduplication, and standardization. This includes fixing data types, renaming columns, handling null values, applying business rules, and preparing data for an optimized star schema before loading it into the model. |
+| **What is query folding and why is it important?** | Query folding occurs when Power Query translates transformations into source-native queries (e.g., SQL). It improves refresh performance, reduces memory usage, and leverages the compute power of the source system. Maintaining folding as long as possible is a key performance best practice. |
+| **Combining multiple data sources** | I combine multiple sources using merge or append operations while monitoring query folding. When schemas differ, I normalize column names, data types, and structures before loading data into the semantic model. |
+| **When do you use Power Query vs DAX?** | I use Power Query for structural, repeatable transformations at refresh time. I use DAX for calculations that must respond dynamically to filters, slicers, and user interaction. |
+| **Handling data quality issues** | I address data quality issues as early as possible by validating keys, removing duplicates, standardizing values, and flagging anomalies. Early data quality checks improve trust, performance, and downstream modeling. |
 
- 🔹 Basic Functions
+---
+
+### 🔹 Basic Functions
 
 | Function | Purpose | Syntax Example |
 |----------|---------|----------------|
-| `Text.Proper` | Converts text to proper case (first letter capitalized). | `Text.Proper("hello world")` → `"Hello World"` |
+| `Text.Proper` | Converts text to proper case. | `Text.Proper("hello world")` → `"Hello World"` |
 | `Text.Upper` | Converts text to uppercase. | `Text.Upper("hello")` → `"HELLO"` |
 | `Text.Lower` | Converts text to lowercase. | `Text.Lower("HELLO")` → `"hello"` |
-| `Number.Round` | Rounds a number to the nearest integer or specified decimals. | `Number.Round(3.14159, 2)` → `3.14` |
+| `Text.Trim` | Removes leading and trailing spaces. | `Text.Trim("  text ")` → `"text"` |
+| `Number.Round` | Rounds a number to specified decimals. | `Number.Round(3.14159, 2)` → `3.14` |
 | `DateTime.LocalNow` | Returns the current system date and time. | `DateTime.LocalNow()` |
-| `Table.RenameColumns` | Renames columns in a table. | `Table.RenameColumns(Source, {{"OldName","NewName"}})` |
-| `Table.RemoveColumns` | Removes specified columns. | `Table.RemoveColumns(Source, {"Column1","Column2"})` |
+| `Table.RenameColumns` | Renames columns in a table. | `Table.RenameColumns(Source, {{"Old","New"}})` |
+| `Table.RemoveColumns` | Removes specified columns. | `Table.RemoveColumns(Source, {"Col1","Col2"})` |
 | `Table.SelectRows` | Filters rows based on a condition. | `Table.SelectRows(Source, each [Sales] > 1000)` |
+| `Table.TransformColumnTypes` | Changes data types of columns. | `Table.TransformColumnTypes(Source, {{"Sales", type number}})` |
+| `Table.TransformColumns` | Applies transformations to one or more columns. | `Table.TransformColumns(Source, {{"Name", Text.Upper}})` |
 
+---
 
-🔹 Advanced Functions
+### 🔹 Advanced & Commonly Used Functions
 
 | Function | Purpose | Syntax Example |
 |----------|---------|----------------|
-| `Table.Group` | Groups rows by one or more columns and applies aggregations. | `Table.Group(Source, {"Region"}, {{"TotalSales", each List.Sum([Sales]), type number}})` |
-| `Table.Join` | Joins two tables on a matching key. | `Table.Join(Table1, "ID", Table2, "ID", JoinKind.Inner)` |
-| `Table.Combine` | Appends multiple tables into one. | `Table.Combine({Table1, Table2})` |
-| `Table.AddColumn` | Adds a calculated column. | `Table.AddColumn(Source, "DiscountedPrice", each [Price] * 0.9)` |
-| `Record.FieldValues` | Returns values from a record as a list. | `Record.FieldValues([Name="Cyrus", Age=35])` → `{"Cyrus", 35}` |
-| `List.Transform` | Applies a function to each item in a list. | `List.Transform({1,2,3}, each _ * 2)` → `{2,4,6}` |
-| `Table.ExpandRecordColumn` | Expands nested records into columns. | `Table.ExpandRecordColumn(Source, "Details", {"City","Country"})` |
-| `Table.Buffer` | Forces evaluation and caches a table in memory (useful for performance tuning). | `Table.Buffer(Source)` |
+| `Table.Group` | Groups rows and applies aggregations. | `Table.Group(Source, {"Region"}, {{"TotalSales", each List.Sum([Sales]), type number}})` |
+| `Table.Join` | Joins two tables on a key. | `Table.Join(T1, "ID", T2, "ID", JoinKind.LeftOuter)` |
+| `Table.NestedJoin` | Creates a nested join (preferred for modeling). | `Table.NestedJoin(T1, "ID", T2, "ID", "Details")` |
+| `Table.Combine` | Appends multiple tables. | `Table.Combine({Table1, Table2})` |
+| `Table.AddColumn` | Adds a calculated column. | `Table.AddColumn(Source, "Discount", each [Price] * 0.9)` |
+| `Table.RemoveRowsWithErrors` | Removes rows containing errors. | `Table.RemoveRowsWithErrors(Source)` |
+| `Table.ReplaceValue` | Replaces values in a column. | `Table.ReplaceValue(Source, null, 0, Replacer.ReplaceValue, {"Sales"})` |
+| `Record.FieldValues` | Extracts values from a record. | `Record.FieldValues([Name="Cyrus", Age=35])` |
+| `List.Transform` | Applies logic to each item in a list. | `List.Transform({1,2,3}, each _ * 2)` |
+| `Table.ExpandRecordColumn` | Expands nested records. | `Table.ExpandRecordColumn(Source, "Details", {"City","Country"})` |
+| `Table.Buffer` | Caches a table in memory (use cautiously). | `Table.Buffer(Source)` |
 
-- **Basic functions** handle text, numbers, dates, and simple table operations.  
-- **Advanced functions** deal with grouping, joining, transformations, and performance optimization.  
-- Always consider **query folding** when applying transformations — push logic back to the source whenever possible.  
-- Use **Power Query (M)** for repeatable, refresh-time transformations; use **DAX** for dynamic, user-driven calculations.  
+---
+
+### 🔹 Data Quality Checking (Best Practices)
+
+**Built-in Power Query tools (recommended first):**
+- **Column Quality** – Shows % of valid, error, and empty values
+- **Column Distribution** – Identifies distinct vs duplicate values
+- **Column Profile** – Reveals min, max, average, and value patterns
+
+**How I apply data quality checks:**
+1. Enable **Column Quality, Distribution, and Profile** early in development.
+2. Validate **primary keys** (uniqueness, null checks).
+3. Standardize text (trim, proper case, remove special characters).
+4. Fix or flag **nulls, outliers, and invalid ranges**.
+5. Remove duplicates or log them for audit when required.
+6. Push data quality logic to the **source system** when possible to preserve query folding.
+
+---
+
+### 🔹 Key Guidelines
+
+- Perform **repeatable, structural logic** in Power Query.
+- Preserve **query folding** as long as possible.
+- Avoid heavy use of `Table.Buffer` unless folding is already broken.
+- Fix **data quality issues early** to simplify DAX and modeling.
+- Use **DAX** only for dynamic, filter-driven calculations.
+
+---
 
 ---
 
