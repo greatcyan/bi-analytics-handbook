@@ -50,7 +50,11 @@ This section focuses on advanced DAX concepts, calculation behavior, and perform
 | **Dynamic Measures (SWITCH, SELECTEDVALUE)** | Dynamic measures use SWITCH and SELECTEDVALUE to change logic based on user selections such as KPIs, scenarios, or currencies. This enables flexible reporting while reducing measure proliferation. |
 | **How do you design dynamic measures without hurting performance?** | I build reusable base measures, keep SWITCH logic shallow, avoid heavy iterators, and rely on filter context instead of complex expressions. I also leverage a star schema so DAX can use efficient filter propagation rather than computation-heavy logic. |
 
-
+* **`CALCULATE()`**: The most important function; modifies filter context.
+* **`REMOVEFILTERS()` / `ALL()`**: Essential for calculating percentages of totals.
+* **`USERPRINCIPALNAME()`**: Core for dynamic security.
+* **`SUMMARIZECOLUMNS()`**: The gold standard for querying data in modern Power BI.
+* **`TREATAS()`**: Useful for virtual relationships when a physical one isn't possible.
 ---
 
 
@@ -297,12 +301,7 @@ Focused on advisory decision-making and cost optimization.
 | **Governance** | **Deployment Pipelines** | Use **Power BI Deployment Pipelines** (Dev -> Test -> Prod). This ensures consistency, allows for parameterizing connection strings, and prevents accidental deletions in production. |
 | **Consulting Skills** | **Ambiguous Requirements** | Start with **KPI Discovery**. Ask: "What decision will this report help you make?" and "What does success look like in 6 months?" Build a Wireframe (low-fidelity) before touching the data. |
 
-## 👉Key DAX Functions to Review
-* **`CALCULATE()`**: The most important function; modifies filter context.
-* **`REMOVEFILTERS()` / `ALL()`**: Essential for calculating percentages of totals.
-* **`USERPRINCIPALNAME()`**: Core for dynamic security.
-* **`SUMMARIZECOLUMNS()`**: The gold standard for querying data in modern Power BI.
-* **`TREATAS()`**: Useful for virtual relationships when a physical one isn't possible.
+
 
 ## 👉Interview Strategy: 
 * **Azure-Only Focus:** Emphasize that you are a specialist in the Microsoft ecosystem.
