@@ -294,6 +294,21 @@ Focused on advisory decision-making, scalability, and cost optimization.
 
 ---
 
+Expects you to act as a **trusted advisor** regarding Microsoft's complex licensing.
+
+### Power BI Licensing Matrix (2026 Context)
+| License Type | Best For... | Key Constraint |
+| :--- | :--- | :--- |
+| **Power BI Pro** | Small to mid-size teams. | 1GB model limit; 8 refreshes/day. |
+| **Premium Per User (PPU)** | Small teams needing advanced AI/Paginated reports. | Content can ONLY be shared with other PPU users. |
+| **Fabric / Premium Capacity (F-SKUs)** | Large enterprises (500+ users). | No "per-reader" cost for F64+ SKUs. Includes OneLake. |
+
+**Discovery Question Scenario:**
+* **Question:** "A client has 800 employees who only need to *view* reports. Which license is best?"
+* **Answer:** "I would recommend **Microsoft Fabric (F64 SKU)** or higher. At 800 users, the 'Per User' cost of Pro ($10-$14/mo) exceeds the cost of a dedicated capacity. This also gives the organization access to OneLake and unified data engineering tools."
+
+---
+
 💡 **Interview-ready closer**  
 > “I don’t recommend licenses based on price alone. I align licensing with usage patterns, scalability needs, and long-term adoption to minimize total cost of ownership.”
 
@@ -388,13 +403,36 @@ As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituat
 
 ---
 
+## 2️⃣Cultural Fit (The "Core Values" Interview)
 
+Consulting firms explicitly hire for **Accountability**, **Candid Feedback**, and a willingness to take ownership.
+
+---
+
+### **1️⃣ Roll up your sleeves**
+**Situation:** At **Lexmark**, a dataset for the monthly financial dashboard arrived with inconsistent formatting, missing headers, and extra rows.  
+**Action:** I manually cleaned and standardized the CSV using **Power Query**, corrected column types, removed duplicates, and verified keys before loading it into the model.  
+**Result:** This hands-on effort allowed the team to meet the **reporting deadline** and maintain confidence in the dashboard for leadership reviews.  
+
+---
+
+### **2️⃣ Experiment or Fail**
+**Situation:** While automating data ingestion for **D&E Air Conditioning**, I attempted a **Python script** to merge multiple Excel and CSV sources before using Power Query.  
+**Action:** The script failed to handle edge cases like empty files and unexpected column names, so I pivoted to a **robust Power Query solution** that maintained query folding.  
+**Result:** I learned the importance of testing new approaches in parallel with proven methods, and the final solution improved refresh reliability while saving hours of manual merging.  
+
+---
+
+### **3️⃣ Candid Feedback**
+**Situation:** During a dashboard redesign, a manager suggested **removing certain KPIs** that were critical for audit compliance.  
+**Action:** I respectfully presented **data-backed analysis**, showing how the KPIs were used in prior decisions and the impact of removing them. I proposed an alternative visualization that met both compliance and design goals.  
+**Result:** The manager agreed, the dashboard was deployed **without losing critical metrics**, and it reinforced a culture of collaborative, data-driven feedback.  
 
 ---
 
 # ☑️📌Senior Consultant: Power BI & Data Specialist Study Guide
 
-## 👉1. Technical Deep-Dive: Power BI & Databricks Integration
+## 1️⃣Technical Deep-Dive: Power BI & Databricks Integration
 
 Emphasizes the use of **Databricks** for data pipelines. You must be able to explain how the "Lakehouse" meets the "Dashboard."
 
@@ -407,24 +445,8 @@ Emphasizes the use of **Databricks** for data pipelines. You must be able to exp
 
 ---
 
-## 👉2. The "Consultant" Edge: Licensing & Discovery
 
-Expects you to act as a **trusted advisor** regarding Microsoft's complex licensing.
-
-### Power BI Licensing Matrix (2026 Context)
-| License Type | Best For... | Key Constraint |
-| :--- | :--- | :--- |
-| **Power BI Pro** | Small to mid-size teams. | 1GB model limit; 8 refreshes/day. |
-| **Premium Per User (PPU)** | Small teams needing advanced AI/Paginated reports. | Content can ONLY be shared with other PPU users. |
-| **Fabric / Premium Capacity (F-SKUs)** | Large enterprises (500+ users). | No "per-reader" cost for F64+ SKUs. Includes OneLake. |
-
-**Discovery Question Scenario:**
-* **Question:** "A client has 800 employees who only need to *view* reports. Which license is best?"
-* **Answer:** "I would recommend **Microsoft Fabric (F64 SKU)** or higher. At 800 users, the 'Per User' cost of Pro ($10-$14/mo) exceeds the cost of a dedicated capacity. This also gives the organization access to OneLake and unified data engineering tools."
-
----
-
-## 👉3. Legacy Transitions: SQL Server & SSIS to Azure
+## 2️⃣Legacy Transitions: SQL Server & SSIS to Azure
 
 The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to migrate these to the cloud.
 
@@ -434,27 +456,9 @@ The job mentions "conventional SQL Server" (SSRS/SSIS). You may be asked how to 
 
 ---
 
-## 👉4. Cultural Fit (The "Core Values" Interview)
-
-Consulting firms explicitly hires for **Accountability** and **Candid Feedback**.
-
-* **"Roll up your sleeves":** Be ready with a story where you did "grunt work" (like cleaning a messy CSV) to help the team meet a deadline.
-* **"Experiment or Fail":** Talk about a time you tried a new tool (like a Python script for data cleaning) that didn't work, what you learned, and how you pivoted back to a stable solution.
-* **"Candid Feedback":** "Tell me about a time you disagreed with a manager." Focus on how you provided **data-backed** feedback respectfully to save the project from a technical error.
-
----
-
-## 👉5. Required Technical Keywords for your STAR Answers
-* **Power Query/M:** Mention "M-parameters" for dynamic filtering.
-* **DAX:** Mention "Context Transition" (Row context to Filter context).
-* **Dimensional Modeling:** Mention "Surrogate Keys" and "Bus Matrix."
-* **Security:** Mention "Object-Level Security (OLS)" vs "Row-Level Security (RLS)."
----
-# ☑️📌 BI Lab Setup Guide: Local & Cloud Environment
-
 This guide outlines how to build a local "Enterprise BI" sandbox on your laptop to practice the legacy and modern tools required for the Senior Consultant role.
 
-## 👉1. Local Software Installation (Order Matters)
+## 3️⃣Local Software Installation (Order Matters)
 
 Follow this sequence to ensure all components communicate correctly:
 
@@ -467,7 +471,7 @@ Follow this sequence to ensure all components communicate correctly:
 
 ---
 
-## 👉2. Load Sample Data (AdventureWorks)
+## 4️⃣Load Sample Data (AdventureWorks)
 
 Don't create data from scratch. Use the industry-standard "AdventureWorks" data warehouse.
 
@@ -480,7 +484,7 @@ Don't create data from scratch. Use the industry-standard "AdventureWorks" data 
 
 ---
 
-## 👉3. Practice Projects & Learning Path
+## 5️⃣Practice Projects & Learning Path
 
 ### Project A: SQL Mastery (Foundation)
 * **Task**: Write a T-SQL view that joins `FactInternetSales` with `DimProduct` and `DimDate`. 
@@ -504,7 +508,7 @@ Don't create data from scratch. Use the industry-standard "AdventureWorks" data 
 
 ---
 
-## 👉4. Modern Cloud Practice (Databricks)
+## 6️⃣Modern Cloud Practice (Databricks)
 
 Since Databricks cannot run locally, use the cloud-based free tier:
 
@@ -519,7 +523,7 @@ Since Databricks cannot run locally, use the cloud-based free tier:
 
 ---
 
-## 👉5.  SSRS, SSIS, SQL Server & Their Similarities to Fabric
+## 7️⃣SSRS, SSIS, SQL Server & Their Similarities to Fabric
 
 This section compares **traditional SQL Server tools** with **Microsoft Fabric**, highlighting their engines, tools, and languages.  
 As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this bridges the gap between legacy SQL Server technologies and Fabric’s modern cloud-native ecosystem.
@@ -572,5 +576,4 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this brid
 
 ---
 
-Earlier in my career, I worked as a Senior Board Repair Specialist, supporting automated test equipment (Teradyne) for electronics production. I analyzed repair and failure data to identify recurring issues and improve processes, using problem-solving and troubleshooting techniques. I also used diagnostic tools that applied statistical analysis, including Process Capability Index, to detect micro-variances and subtle differences in test results. Additionally, I built Excel-based tracking systems to monitor performance, which gave me a strong foundation in data analysis that I now apply in BI and analytics.
 
