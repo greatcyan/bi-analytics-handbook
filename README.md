@@ -12,8 +12,6 @@ How do you handle nulls? For business context I usually keep nulls as null to av
 
 - Which tools or Microsoft stack components do senior consultants use most frequently across projects—Power BI, Fabric, Dataflows, or others?
 
- - Does 3Cloud follow specific modeling or ETL standards across clients, or is it adjusted per client environment?
-
 ## 1️⃣Data Modeling 
 
 One of the foundational pillars of this repository is mastering the **Star Schema**.
