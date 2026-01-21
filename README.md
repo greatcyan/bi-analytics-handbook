@@ -174,6 +174,55 @@ Focused on building efficient, scalable, and enterprise-ready models.
 
 ---
 
+## Deployment & Governance (Fabric-Aware / Enterprise)
+
+Covers enterprise deployment, governance, and consulting best practices, aligned with **Power BI + Microsoft Fabric**.
+
+| Topic | Answer |
+| :--- | :--- |
+| **Gateways (Personal vs Standard)** | Personal gateways are for individual use and development. Standard (Enterprise) gateways support multiple datasets, clustering, high availability, and centralized IT management—required for production and Fabric-integrated workloads. |
+| **Refresh strategies** | I choose between scheduled refresh, incremental refresh, hybrid tables, and DirectQuery based on data volume, freshness SLAs, and cost. In Fabric, I also consider pipeline orchestration and event-driven patterns. |
+| **Dataflows (Gen1 vs Gen2)** | Dataflows centralize Power Query logic. **Dataflows Gen2** integrate with Fabric workloads (Lakehouse, Warehouse) and support better orchestration, observability, and reuse across the platform. |
+| **Workspace architecture (Dev / Test / Prod)** | I enforce Dev/Test/Prod separation using workspaces and Deployment Pipelines to enable controlled releases, testing, rollback, and environment-specific rules. |
+| **Semantic model sharing** | I promote shared, endorsed, and certified semantic models to enforce a single source of truth and reduce duplication across reports and teams. |
+| **Row-Level Security (RLS)** | RLS restricts data visibility at the row level using static roles or dynamic security (`USERPRINCIPALNAME()`). Common use cases include region-, department-, or customer-level access. |
+| **Object-Level Security (OLS)** | OLS hides entire tables or measures from unauthorized users, often used to protect sensitive or internal-only data structures. |
+| **Column-Level Security (CLS)** | CLS restricts access to sensitive columns (e.g., salary, cost, PII). It is commonly implemented and maintained using Tabular Editor in enterprise models. |
+| **Workspace roles & management** | I manage access using Admin, Member, Contributor, and Viewer roles, applying least-privilege principles and separating development from consumption. |
+| **Security Groups** | I assign access using Azure AD Security Groups instead of individuals, simplifying onboarding/offboarding and ensuring scalable security management. |
+| **Workspace Apps** | Workspace Apps provide a governed, read-only consumption layer for business users, ensuring consistent experience while keeping development isolated. |
+| **Deployment Pipelines** | Deployment Pipelines automate promotion from Dev → Test → Prod with parameter rules for data sources, connections, and credentials, reducing manual errors. |
+| **Endorsement (Promoted / Certified)** | Promoted content is team-approved, while Certified content is validated by IT or a Center of Excellence (CoE) as an official, trusted source. |
+| **Auditing & monitoring** | I use audit logs, usage metrics, refresh history, and Fabric Capacity Metrics to monitor adoption, performance, security, and cost. |
+| **Tenant settings & governance** | I align tenant settings with governance policies—controlling sharing, external access, exports, custom visuals, and Fabric workload usage. |
+
+---
+
+### 🔹 Fabric-Specific Governance Concepts
+
+| Fabric Concept | Governance Perspective |
+|---------------|------------------------|
+| **OneLake** | Acts as a single, governed data lake. I enforce standardized folder structures, naming conventions, and access policies across domains. |
+| **Domains** | Used to logically group data by business area (Finance, Operations, Sales) and improve discoverability, ownership, and accountability. |
+| **Lakehouse / Warehouse** | Lakehouse supports flexible analytics; Warehouse supports structured SQL analytics. I choose based on workload patterns and governance requirements. |
+| **Pipelines** | Used for orchestration, refresh sequencing, dependency management, and controlled execution across environments. |
+| **Capacity Management** | I monitor CU usage, throttling, and workload distribution to balance cost, performance, and scalability. |
+
+---
+
+### 🔹 Consulting & Enterprise Best Practices
+
+- Enforce **clear ownership** (Data Owner, Model Owner, Report Owner)
+- Centralize transformations in **Dataflows / Lakehouse**
+- Certify **trusted semantic models**
+- Use **Security Groups** for all access control
+- Apply **RLS / OLS / CLS** consistently
+- Separate **build vs consume** via Workspace Apps
+- Automate deployments with **pipelines**
+- Monitor usage, cost, and performance continuously
+
+---
+
 ## 🧱 Databricks & Data Pipelines
 
 | Topic | Answer |
@@ -221,19 +270,6 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this help
 
 ---
 
-## 👉 Deployment & Governance
-
-Covers enterprise deployment, governance, and consulting best practices.
-
-| Topic | Answer |
-| :--- | :--- |
-| **Gateways (Personal vs Standard)** | Personal gateways are intended for individual use, while standard gateways support enterprise scenarios with multiple datasets, users, and centralized management. |
-| **Refresh strategies** | Refresh strategies include scheduled refresh, incremental refresh, and near real-time DirectQuery, depending on data volume and business needs. |
-| **Dataflows** | Dataflows centralize data preparation logic, promote reusability, and support governance by separating data transformation from semantic modeling. |
-| **Workspace architecture** | I follow a Dev / Test / Prod workspace strategy to support controlled deployments, testing, and governance. |
-| **Dataset sharing strategies** | I prefer shared and certified datasets to enforce a single source of truth, reduce duplication, and improve consistency across reports. |
-
----
 
 ## 💼 Power BI Licensing (Consulting Scenarios)
 
