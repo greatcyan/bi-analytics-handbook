@@ -226,6 +226,59 @@ Covers enterprise deployment, governance, and consulting best practices, aligned
 - Monitor usage, cost, and performance continuously
 
 ---
+## 💼 Power BI Licensing (Consulting Scenarios)
+
+Focused on advisory decision-making, scalability, and cost optimization.
+
+| Topic | Answer |
+| :--- | :--- |
+| **Pro vs Premium Per User (PPU) vs Premium Capacity** | **Pro** is suitable for small teams with limited sharing needs. **PPU** enables advanced features (XMLA read/write, large models, incremental refresh) for individual users. **Premium Capacity** supports enterprise-scale deployments, large audiences, and allows free users to consume content via Apps. |
+| **When to recommend Power BI Embedded** | Power BI Embedded is ideal for ISVs or external-facing applications where reports are embedded into custom apps and end users should not require Power BI licenses. Pricing is based on Azure capacity, not user count. |
+| **How would you advise a client with 300 users?** | I evaluate usage patterns, number of content creators, refresh requirements, model size, and concurrency. If most users are consumers, Premium Capacity is usually more cost-effective. If only a subset needs advanced features, PPU for creators and Pro for others may be sufficient. |
+| **Mixed licensing strategies** | Many clients benefit from a hybrid approach—Premium Capacity for broad consumption, Pro or PPU for developers and analysts, and Embedded for external users. |
+
+---
+
+### 🔹 Power BI License Comparison
+
+| License | Key Features | Limitations | Typical Use Case |
+|--------|--------------|-------------|------------------|
+| **Free** | View content shared via Premium Capacity Apps | Cannot share content | Executives and casual viewers |
+| **Pro** | Share dashboards, collaborate, scheduled refresh | All users need Pro | Small teams and departments |
+| **Premium Per User (PPU)** | Large models, incremental refresh, XMLA read/write, deployment pipelines | All users must have PPU | Advanced analytics for limited users |
+| **Premium Capacity (P SKU / F SKU)** | Large-scale models, high refresh rates, free viewers, paginated reports, AI features | Higher fixed cost | Enterprise-wide BI adoption |
+| **Power BI Embedded (A SKU)** | App-based embedding, external user access | No Power BI UI | ISVs and customer-facing analytics |
+
+---
+
+### 🔹 Common Consulting Scenarios
+
+| Scenario | Recommended Licensing | Reasoning |
+|--------|-----------------------|-----------|
+| **Startup (10–20 users)** | Pro | Low cost, simple collaboration |
+| **Mid-size team (50–100 users)** | Pro or PPU | Depends on advanced feature usage |
+| **Enterprise (300+ users, mostly viewers)** | Premium Capacity | Cost-effective distribution at scale |
+| **Finance / Advanced analytics team** | PPU | Advanced features without full capacity |
+| **External customers / partners** | Power BI Embedded | No Power BI licenses required |
+| **Executive dashboards** | Premium Capacity + Free users | Secure, scalable read-only access |
+
+---
+
+### 🔹 Advisory Framework (How I Decide)
+
+1. **Who creates vs who consumes?**
+2. **How many concurrent users?**
+3. **Model size and refresh frequency?**
+4. **Advanced features needed?** (Paginated reports, XMLA, AI)
+5. **Internal vs external audience?**
+6. **Growth expectations (12–24 months)?**
+
+---
+
+💡 **Interview-ready closer**  
+> “I don’t recommend licenses based on price alone. I align licensing with usage patterns, scalability needs, and long-term adoption to minimize total cost of ownership.”
+
+---
 
 ## 🧱 Databricks & Data Pipelines
 
