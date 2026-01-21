@@ -1,4 +1,4 @@
-# ☑️📌BI & Analytics Handbook
+# ☑️BI & Analytics Handbook
 
 Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns, advanced DAX, and end-to-end data pipeline best practices.
 
@@ -14,7 +14,7 @@ How do you handle nulls? For business context I usually keep nulls as null to av
 
  - Does 3Cloud follow specific modeling or ETL standards across clients, or is it adjusted per client environment?
 
-## Data Modeling 
+## 1️⃣Data Modeling 
 
 One of the foundational pillars of this repository is mastering the **Star Schema**.
 
@@ -29,7 +29,7 @@ One of the foundational pillars of this repository is mastering the **Star Schem
 
 ---
 
-## DAX (Advanced Concepts)
+## 2️⃣DAX (Advanced Concepts)
 
 This section focuses on advanced DAX concepts, calculation behavior, and performance best practices commonly asked in senior BI interviews.
 
@@ -55,11 +55,24 @@ This section focuses on advanced DAX concepts, calculation behavior, and perform
 * **`USERPRINCIPALNAME()`**: Core for dynamic security.
 * **`SUMMARIZECOLUMNS()`**: The gold standard for querying data in modern Power BI.
 * **`TREATAS()`**: Useful for virtual relationships when a physical one isn't possible.
+
+| Function | Primary Purpose | Senior-Level "Pro-Tip" |
+| :--- | :--- | :--- |
+| `CALCULATE()` | The "Brain" of DAX. Modifies filter context. | Always use `KEEPFILTERS()` within CALCULATE if you want to preserve existing slicer selections rather than overwriting them. |
+| `SUMX() / AVERAGEX()` | Iterative functions that perform row-by-row logic. | Avoid using these on huge tables (10M+ rows) if a standard aggregation will suffice. Iterators are CPU-intensive. |
+| `ALL()` / `REMOVEFILTERS()` | Removes filters to calculate "Grand Totals." | Use `REMOVEFILTERS()` for clarity in modern DAX; it performs exactly like `ALL()` but is more descriptive for other devs. |
+| `ALLSELECTED()` | Keeps the filters coming from slicers/pages but ignores visual-level filters. | This is the "Gold Standard" for calculating "% of visible total" in dynamic dashboards. |
+| `USERPRINCIPALNAME()` | Returns the email of the logged-in user. | The foundation of **Dynamic RLS**. Combine with a bridge table to secure data for thousands of users with a single role. |
+| `TREATAS()` | Applies the result of a table expression as filters to columns from an unrelated table. | Use this for "Virtual Relationships" when you cannot (or should not) create a physical line in the model view. |
+| `SELECTEDVALUE()` | Captures what a user picked in a slicer. | Perfect for "Dynamic Titles" or switching metrics (e.g., swapping a chart between "Sales $" and "Units Sold"). |
+| `COALESCE()` | Returns the first non-blank value. | Use this to replace `IF(ISBLANK(...))` for cleaner code and slightly better performance. |
+| `SWITCH(TRUE()...)` | A cleaner alternative to nested IF statements. | Use the `TRUE()` pattern for complex conditional logic (e.g., `SWITCH(TRUE(), [Sales] > 1M, "Gold", [Sales] > 500k, "Silver", "Bronze")`). |
+
 ---
 
 
 
-## Power Query / M (Data Preparation)
+## 3️⃣Power Query / M (Data Preparation)
 
 Focused on data transformation, query folding, and applying logic in the correct layer.
 
@@ -136,7 +149,7 @@ Focused on data transformation, query folding, and applying logic in the correct
 
 ---
 
-## Power BI Performance Optimization
+## 4️⃣Power BI Performance Optimization
 
 Focused on building efficient, scalable, and enterprise-ready models.
 
@@ -178,7 +191,7 @@ Focused on building efficient, scalable, and enterprise-ready models.
 
 ---
 
-## Deployment & Governance (Fabric-Aware / Enterprise)
+## 5️⃣Deployment & Governance (Fabric-Aware / Enterprise)
 
 Covers enterprise deployment, governance, and consulting best practices, aligned with **Power BI + Microsoft Fabric**.
 
@@ -200,6 +213,12 @@ Covers enterprise deployment, governance, and consulting best practices, aligned
 | **Auditing & monitoring** | I use audit logs, usage metrics, refresh history, and Fabric Capacity Metrics to monitor adoption, performance, security, and cost. |
 | **Tenant settings & governance** | I align tenant settings with governance policies—controlling sharing, external access, exports, custom visuals, and Fabric workload usage. |
 
+High-Level Architectural Concepts (2026 Focus)
+
+* **Medallion Architecture:** Be able to explain **Bronze** (Raw), **Silver** (Cleansed), and **Gold** (Aggregated/Business-Ready) layers within a Lakehouse.
+* **Vibe Coding / AI:** Mention how you use **Copilot for DAX** to speed up development, but emphasize that you manually audit the code for performance.
+* **Governance:** Mention **Purview** for data lineage and **Deployment Pipelines** for moving code from Dev to Prod.
+  
 ---
 
 ### 🔹 Fabric-Specific Governance Concepts
@@ -226,7 +245,7 @@ Covers enterprise deployment, governance, and consulting best practices, aligned
 - Monitor usage, cost, and performance continuously
 
 ---
-## 💼 Power BI Licensing (Consulting Scenarios)
+## 6️⃣ Power BI Licensing (Consulting Scenarios)
 
 Focused on advisory decision-making, scalability, and cost optimization.
 
@@ -280,7 +299,7 @@ Focused on advisory decision-making, scalability, and cost optimization.
 
 ---
 
-## 🧱 Databricks & Data Pipelines
+## 7️⃣ Databricks & Data Pipelines
 
 | Topic | Answer |
 | :--- | :--- |
@@ -291,7 +310,7 @@ Focused on advisory decision-making, scalability, and cost optimization.
 
 ---
 
-## 👉 Azure Synapse & Azure Data Factory (ADF)
+## 8️⃣ Azure Synapse & Azure Data Factory (ADF)
 
 This section compares **Azure Synapse Analytics** and **Azure Data Factory (ADF)** with **Microsoft Fabric**, highlighting their engines, tools, and languages.  
 As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this helps connect the Azure data services with Fabric’s unified SaaS-first approach.
@@ -327,19 +346,7 @@ As someone certified in **PL-300 (Power BI)** and **DP-600 (Fabric)**, this help
 
 ---
 
-
-## 💼 Power BI Licensing (Consulting Scenarios)
-
-Focused on advisory decision-making and cost optimization.
-
-| Topic | Answer |
-| :--- | :--- |
-| **Pro vs Premium Per User vs Premium Capacity** | Pro is suitable for small teams. Premium Per User enables advanced features for individuals. Premium Capacity supports large-scale deployments and broad content distribution without requiring Pro licenses for viewers. |
-| **When to recommend Power BI Embedded** | Power BI Embedded is ideal for external-facing applications where reports are embedded into custom apps and users do not require Power BI licenses. |
-| **How would you advise a client with 300 users?** | I assess usage patterns, data volume, refresh frequency, and sharing needs. In many cases, Premium Capacity is cost-effective for large audiences, while Premium Per User may suffice if advanced features are limited to a smaller group. |
-
----
-## 👉Technical & Architectural Interview Guide
+## 9️⃣Technical & Architectural Interview Guide
 
 | Question Category | Scenario / Context | Expert Consultant Answer |
 | :--- | :--- | :--- |
@@ -354,40 +361,15 @@ Focused on advisory decision-making and cost optimization.
 | **Governance** | **Deployment Pipelines** | Use **Power BI Deployment Pipelines** (Dev -> Test -> Prod). This ensures consistency, allows for parameterizing connection strings, and prevents accidental deletions in production. |
 | **Consulting Skills** | **Ambiguous Requirements** | Start with **KPI Discovery**. Ask: "What decision will this report help you make?" and "What does success look like in 6 months?" Build a Wireframe (low-fidelity) before touching the data. |
 
-
-
-## 👉Interview Strategy: 
-* **Azure-Only Focus:** Emphasize that you are a specialist in the Microsoft ecosystem.
-* **People First:** Mention how your solutions enable "Data Democracy" (making data easy for non-technical users).
-* **Performance:** Always mention that a report is only good if it's fast and accurate.
-
 ---
-# ☑️📌Senior BI Consultant Study Guide: DAX & Soft Skills
+# ☑️Soft Skills
 
-This guide is tailored for Senior Consultant roles at elite Microsoft partners. It focuses on architectural impact rather than just basic syntax.
-
-## 👉1. Consultant-Grade DAX Cheat Sheet
-
-| Function | Primary Purpose | Senior-Level "Pro-Tip" |
-| :--- | :--- | :--- |
-| `CALCULATE()` | The "Brain" of DAX. Modifies filter context. | Always use `KEEPFILTERS()` within CALCULATE if you want to preserve existing slicer selections rather than overwriting them. |
-| `SUMX() / AVERAGEX()` | Iterative functions that perform row-by-row logic. | Avoid using these on huge tables (10M+ rows) if a standard aggregation will suffice. Iterators are CPU-intensive. |
-| `ALL()` / `REMOVEFILTERS()` | Removes filters to calculate "Grand Totals." | Use `REMOVEFILTERS()` for clarity in modern DAX; it performs exactly like `ALL()` but is more descriptive for other devs. |
-| `ALLSELECTED()` | Keeps the filters coming from slicers/pages but ignores visual-level filters. | This is the "Gold Standard" for calculating "% of visible total" in dynamic dashboards. |
-| `USERPRINCIPALNAME()` | Returns the email of the logged-in user. | The foundation of **Dynamic RLS**. Combine with a bridge table to secure data for thousands of users with a single role. |
-| `TREATAS()` | Applies the result of a table expression as filters to columns from an unrelated table. | Use this for "Virtual Relationships" when you cannot (or should not) create a physical line in the model view. |
-| `SELECTEDVALUE()` | Captures what a user picked in a slicer. | Perfect for "Dynamic Titles" or switching metrics (e.g., swapping a chart between "Sales $" and "Units Sold"). |
-| `COALESCE()` | Returns the first non-blank value. | Use this to replace `IF(ISBLANK(...))` for cleaner code and slightly better performance. |
-| `SWITCH(TRUE()...)` | A cleaner alternative to nested IF statements. | Use the `TRUE()` pattern for complex conditional logic (e.g., `SWITCH(TRUE(), [Sales] > 1M, "Gold", [Sales] > 500k, "Silver", "Bronze")`). |
-
----
-
-## 👉2. Behavioral & Soft Skills for Consultants (The STAR Method)
+## 1️⃣Behavioral & Soft Skills for Consultants (The STAR Method)
 
 As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituation, **T**ask, **A**ction, **R**esult format.
 
 ### Q1: "Tell me about a time you dealt with a difficult stakeholder."
-* **The Scenario:** A stakeholder demands a "Flat Table" export because they "don't trust the dashboard."
+* **The Scenario:** At Lexmark, a stakeholder insisted on receiving flat Excel exports because they didn’t trust the Power BI dashboard.
 * **The Answer:** Focus on **Active Listening** and **Education**.
     * *Action:* I met with them 1-on-1 to find the root of their distrust. I discovered they were comparing a "Gross" number in Excel to a "Net" number in Power BI.
     * *Result:* I aligned the definitions, added a "Data Dictionary" page to the report, and earned their buy-in, leading to a 40% increase in dashboard adoption.
@@ -399,18 +381,14 @@ As a Senior Consultant, you are an advisor. Prepare stories using the **S**ituat
     * *Result:* We moved from a generic request to a "Action-Oriented" dashboard that reduced meeting times by 15 minutes daily.
 
 ### Q3: "Tell me about a time you failed or made a technical mistake."
-* **The Scenario:** You deployed a report that was extremely slow in production.
+* **The Scenario:** I deployed a report that was extremely slow in production.
 * **The Answer:** Focus on **Accountability** and **Optimization**.
     * *Action:* I took ownership, used **DAX Studio** to find a poorly written `FILTER(ALL())` measure, and refactored it using `KEEPFILTERS`.
     * *Result:* The report load time dropped from 12 seconds to 2 seconds. I then created a "Performance Checklist" for the whole team to prevent it happening again.
 
 ---
 
-## 👉3. High-Level Architectural Concepts (2026 Focus)
 
-* **Medallion Architecture:** Be able to explain **Bronze** (Raw), **Silver** (Cleansed), and **Gold** (Aggregated/Business-Ready) layers within a Lakehouse.
-* **Vibe Coding / AI:** Mention how you use **Copilot for DAX** to speed up development, but emphasize that you manually audit the code for performance.
-* **Governance:** Mention **Purview** for data lineage and **Deployment Pipelines** for moving code from Dev to Prod.
 
 ---
 
