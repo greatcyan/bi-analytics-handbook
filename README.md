@@ -1,4 +1,4 @@
-# ☑️BI & Analytics Handbook
+# ☑️BI & Analytics Consultant Handbook
 
 Welcome to my personal knowledge base for **Business Intelligence and Analytics Engineering**. This repository serves as a centralized hub for data modeling patterns, advanced DAX, and end-to-end data pipeline best practices.
 
