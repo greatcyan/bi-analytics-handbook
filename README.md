@@ -14,7 +14,7 @@ How do you handle nulls? For business context I usually keep nulls as null to av
 
  - Does 3Cloud follow specific modeling or ETL standards across clients, or is it adjusted per client environment?
 
-## 🧠 Data Modeling 
+## Data Modeling 
 
 One of the foundational pillars of this repository is mastering the **Star Schema**.
 
@@ -29,17 +29,27 @@ One of the foundational pillars of this repository is mastering the **Star Schem
 
 ---
 
-## 🧮 DAX (Advanced Concepts)
+## DAX (Advanced Concepts)
 
 This section focuses on advanced DAX concepts, calculation behavior, and performance best practices commonly asked in senior BI interviews.
 
 | Topic | Answer |
 | :--- | :--- |
-| **What is CALCULATE and why is it important?** | CALCULATE modifies the filter context of a measure. It allows expressions to be evaluated under different filters than those applied by visuals. CALCULATE is essential for time intelligence, conditional logic, and implementing complex business rules by adding, removing, or overriding filters. |
-| **Row Context vs Filter Context** | Row context exists when calculations are evaluated row by row, typically in calculated columns or iterator functions like SUMX. Filter context comes from slicers, filters, and visuals and determines which rows are included in a calculation. Understanding how CALCULATE transitions row context into filter context is critical for correct DAX results. |
+| **What is CALCULATE and why is it important?** | CALCULATE evaluates an expression in a modified filter context. It is the most important DAX function because it enables time intelligence, conditional logic, and complex business rules by adding, removing, or overriding filters applied by visuals, slicers, or row context. |
+| **Row Context vs Filter Context** | Row context exists when calculations are evaluated row by row, typically in calculated columns or iterator functions like SUMX. Filter context comes from slicers, filters, and visuals. CALCULATE is unique because it can transform row context into filter context, which is essential for correct aggregations in measures. |
+| **CALCULATE Filter Arguments (Overview)** | CALCULATE accepts filter arguments that modify filter context. These include Boolean expressions, table expressions, and filter modifier functions such as ALL, REMOVEFILTERS, KEEPFILTERS, VALUES, USERELATIONSHIP, and TREATAS. Choosing the right filter modifier is critical for correctness and performance. |
+| **ALL vs REMOVEFILTERS** | ALL removes filters from a column or table and ignores existing filter context created by visuals. REMOVEFILTERS removes filters while preserving lineage and is preferred in modern DAX for clarity. Both are commonly used for percent-of-total, grand totals, and benchmark comparisons. |
+| **KEEPFILTERS** | KEEPFILTERS modifies CALCULATE behavior by intersecting new filters with existing ones instead of replacing them. It is useful when you want to further restrict user selections rather than override them, such as applying additional business rules without breaking slicer behavior. |
+| **TREATAS** | TREATAS applies values from one table as filters on columns of another table without requiring a physical relationship. It is useful for virtual relationships, disconnected slicers, what-if scenarios, and mapping data across different grains. |
+| **VALUES vs ALL in filters** | VALUES respects the current filter context and returns only visible values, while ALL ignores filters. VALUES is safer for context-aware calculations; ALL is used when you intentionally need to remove context, such as calculating overall totals or rankings. |
+| **USERELATIONSHIP** | USERELATIONSHIP temporarily activates an inactive relationship within CALCULATE. It is commonly used in role-playing dimensions like Order Date vs Ship Date without duplicating date tables. |
+| **FILTER vs Boolean filter arguments** | Boolean filter arguments (e.g., `Table[Column] = "X"`) are faster and preferred when possible. FILTER should be used only when row-by-row evaluation or complex conditions are required, as it introduces iteration and can impact performance. |
+| **Common Iterator Functions (X Functions)** | Functions such as SUMX, AVERAGEX, MINX, and MAXX iterate over a table and evaluate an expression row by row. They are powerful but should be used carefully, as iterators are more expensive than simple aggregations. |
+| **Context Preservation Functions** | Functions like ALLEXCEPT, ALLSELECTED, and REMOVEFILTERS are used to control which parts of the filter context are preserved or removed. ALLSELECTED is commonly used in visual-level calculations where user selections should be respected. |
 | **Time Intelligence Patterns** | Time intelligence relies on a properly designed and marked Date table. Common patterns include YTD, MTD, QTD, Same Period Last Year, and rolling periods, using functions such as TOTALYTD, SAMEPERIODLASTYEAR, DATEADD, and DATESINPERIOD. |
-| **Dynamic Measures (SWITCH, SELECTEDVALUE)** | Dynamic measures use SWITCH and SELECTEDVALUE to change logic based on user selections such as KPIs, scenarios, or currencies. This allows a single measure to support multiple analytical views while keeping the model clean and reusable. |
-| **How do you design dynamic measures without hurting performance?** | I reuse base measures, minimize branching logic, avoid deeply nested SWITCH statements, and keep calculations aggregation-friendly. I also rely on a well-designed star schema so DAX can leverage efficient filter propagation instead of complex logic. |
+| **Dynamic Measures (SWITCH, SELECTEDVALUE)** | Dynamic measures use SWITCH and SELECTEDVALUE to change logic based on user selections such as KPIs, scenarios, or currencies. This enables flexible reporting while reducing measure proliferation. |
+| **How do you design dynamic measures without hurting performance?** | I build reusable base measures, keep SWITCH logic shallow, avoid heavy iterators, and rely on filter context instead of complex expressions. I also leverage a star schema so DAX can use efficient filter propagation rather than computation-heavy logic. |
+
 
 ---
 
